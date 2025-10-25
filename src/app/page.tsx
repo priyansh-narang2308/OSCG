@@ -1,3 +1,4 @@
+import AboutUs from "@/components/about-section";
 import HeroSection from "@/components/hero-section";
 import Navigation from "@/components/navigation";
 
@@ -5,7 +6,8 @@ export default function Home() {
   return (
     <div>
       <Navigation />
-      <HeroSection/>
+      <HeroSection />
+      <AboutUs />
     </div>
   );
 }

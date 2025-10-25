@@ -79,7 +79,7 @@ const Navigation = () => {
                 side="right"
                 className="w-[280px] sm:w-[340px] bg-[#0B0F17] flex flex-col items-center pt-16"
               >
-                <SheetHeader className="absolute top-5 left-6">
+                <SheetHeader className="absolute top-5 w-full flex justify-center">
                   <SheetTitle className="text-white text-lg font-semibold tracking-wide">
                     Menu
                   </SheetTitle>
