@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import {Inter } from "next/font/google";
+import { Ubuntu } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+const inter = Ubuntu({
+  weight: ["300", "400", "500", "700"],
+  subsets:["greek"]
 });
 
 export const metadata: Metadata = {
@@ -19,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body suppressHydrationWarning={true}
-        className={`${inter.variable}`}
-      >
+      <body suppressHydrationWarning={true} className={`${inter.className}`}>
         {children}
       </body>
     </html>
