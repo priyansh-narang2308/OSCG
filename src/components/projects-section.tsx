@@ -1,3 +1,6 @@
+import { Github, Star, GitFork, ExternalLink } from "lucide-react";
+import { Button } from "./ui/button";
+
 const projects = [
   {
     title: "CloudNative Orchestrator",
@@ -62,16 +65,80 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-20 bg-secondary/20">
-      <div className="container mx-auto px-6">
+    <section id="projects" className="py-20 bg-[#090E1A]">
+      <div className="container mx-auto px-6 ">
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-4xl font-bold md:text-5xl">
-            Our <span className="text-primary">Projects</span>
+          <h2 className="mb-4 text-4xl text-white font-bold md:text-5xl">
+            Our <span className="text-[#4FD1D0]">Projects</span>
           </h2>
-          <p className="mx-auto max-w-2xl text-muted-foreground">
+          <p className="mx-auto max-w-2xl text-white/80">
             Discover innovative open source projects that are shaping the future
             of technology
           </p>
+        </div>
+
+        <div className="mb-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className={`rounded-lg border-t-8 ${project.borderColor} bg-[#161A26] p-6 transition-transform hover:scale-105`}
+            >
+              <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#2D313B]">
+                <Github className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="mb-2 mt-2 text-xl font-semibold text-white">
+                {project.title}
+              </h3>
+              <p className="mb-4 text-sm text-white/60">
+                {project.description}
+              </p>
+
+              <div className="mb-4 flex items-center gap-4 text-sm">
+                <div className="flex items-center gap-1 bg-[#2D313B] rounded-xl px-2 py-1">
+                  <div
+                    className={`h-3 w-3 rounded-full ${project.languageColor}`}
+                  />
+                  <span className="text-white text-sm">{project.language}</span>
+                </div>
+              </div>
+
+              <div className="mb-4 flex items-center gap-4 text-sm text-muted-foreground">
+                <div className="flex items-center gap-1 text-white/70">
+                  <Star className="h-4 w-4" />
+                  {project.stars}
+                </div>
+                <div className="flex items-center gap-1 text-white/70">
+                  <GitFork className="h-4 w-4" />
+                  {project.forks}
+                </div>
+              </div>
+
+              <a
+                href="#"
+                className="inline-flex items-center gap-1 text-sm text-[#00D4AA] hover:underline"
+              >
+                View Project
+                <ExternalLink className="h-3 w-3" />
+              </a>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center p-10">
+          <Button
+            size="lg"
+            className=" cursor-pointer
+      text-black                 
+      bg-[#5bebb5]               
+      hover:bg-[#4dddabd3]         
+      rounded-full              
+      px-10 py-4             
+      font-semibold             
+      shadow-lg                  
+    "
+          >
+            Explore All Projects
+          </Button>
         </div>
       </div>
     </section>
