@@ -24,7 +24,7 @@ const navItems = [
 const Navigation = () => {
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 backdrop-blur-md"
+      className="fixed top-0 left-0 right-0 z-50  backdrop-blur-md"
       style={{ backgroundColor: "#0B0F17" }}
     >
       <div className="container mx-auto px-5">
@@ -60,7 +60,7 @@ const Navigation = () => {
           </div>
 
           <div className="flex items-center gap-3">
-            <Button className="border-2 border-[#6FE7C1] text-white bg-transparent rounded-xl px-5 py-2 font-semibold hover:bg-[#1a2e31] transition-colors">
+            <Button className="border-2 border-[#6FE7C1] text-white cursor-pointer bg-transparent rounded-xl px-5 py-2 font-semibold hover:bg-[#1a2e31] transition-colors">
               Sign In
             </Button>
 
