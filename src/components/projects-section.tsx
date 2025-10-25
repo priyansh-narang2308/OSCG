@@ -128,14 +128,12 @@ const ProjectsSection = () => {
           <Button
             size="lg"
             className=" cursor-pointer
-      text-black                 
-      bg-[#5bebb5]               
-      hover:bg-[#4dddabd3]         
-      rounded-full              
-      px-10 py-4             
-      font-semibold             
-      shadow-lg                  
-    "
+            text-black                 
+            bg-[#5bebb5]               
+            hover:bg-[#4dddabd3]         
+            rounded-full              
+            px-10 py-4             
+            font-semibold         shadow-lg     "
           >
             Explore All Projects
           </Button>
