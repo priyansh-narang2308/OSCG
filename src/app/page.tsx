@@ -3,6 +3,7 @@ import HeroSection from "@/components/hero-section";
 import Navigation from "@/components/navigation";
 import ProjectsSection from "@/components/projects-section";
 import SpeakersSection from "@/components/speakers-section";
+import SponsersSection from "@/components/sponsors-section";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutUs />
       <ProjectsSection />
       <SpeakersSection />
+      <SponsersSection/>
     </div>
   );
 }
