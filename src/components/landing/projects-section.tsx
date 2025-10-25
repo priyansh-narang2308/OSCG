@@ -1,5 +1,5 @@
 import { Github, Star, GitFork, ExternalLink } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 const projects = [
   {

@@ -1,9 +1,9 @@
-import AboutUs from "@/components/about-section";
-import HeroSection from "@/components/hero-section";
-import Navigation from "@/components/navigation";
-import ProjectsSection from "@/components/projects-section";
-import SpeakersSection from "@/components/speakers-section";
-import SponsersSection from "@/components/sponsors-section";
+import AboutUs from "@/components/landing/about-section";
+import HeroSection from "@/components/landing/hero-section";
+import Navigation from "@/components/landing/navigation";
+import ProjectsSection from "@/components/landing/projects-section";
+import SpeakersSection from "@/components/landing/speakers-section";
+import SponsersSection from "@/components/landing/sponsors-section";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <AboutUs />
       <ProjectsSection />
       <SpeakersSection />
-      <SponsersSection/>
+      <SponsersSection />
     </div>
   );
 }

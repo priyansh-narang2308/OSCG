@@ -1,5 +1,5 @@
 import { ChevronLeft, ChevronRight, Linkedin, Twitter } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 const speakers = [
   {
