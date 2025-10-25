@@ -1,15 +1,10 @@
 "use client";
 import Link from "next/link";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
   { label: "About us", href: "#about" },
@@ -22,9 +17,11 @@ const navItems = [
 ];
 
 const Navigation = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-50  backdrop-blur-md"
+      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md"
       style={{ backgroundColor: "#0B0F17" }}
     >
       <div className="container mx-auto px-5">
@@ -64,49 +61,99 @@ const Navigation = () => {
               Sign In
             </Button>
 
-            <Sheet>
-              <SheetTrigger asChild>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="lg:hidden text-gray-200 hover:text-[#6FE7C1]"
-                >
-                  <Menu className="h-5 w-5" />
-                </Button>
-              </SheetTrigger>
-
-              <SheetContent
-                side="right"
-                className="w-[280px] sm:w-[340px] bg-[#0B0F17] flex flex-col items-center pt-16"
+            {/* Mobile menu button with smooth animation */}
+            <div className="lg:hidden">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-gray-200 hover:text-[#6FE7C1] transition-colors duration-200"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
-                <SheetHeader className="absolute top-5 w-full flex justify-center">
-                  <SheetTitle className="text-white text-lg font-semibold tracking-wide">
-                    Menu
-                  </SheetTitle>
-                </SheetHeader>
-
-                <div className="flex flex-col items-center gap-6 mt-8 w-full">
-                  {navItems.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="relative text-lg font-medium text-gray-200 group"
-                    >
-                      <span className="group-hover:text-[#6FE7C1] transition-colors duration-300">
-                        {item.label}
-                      </span>
-                      <span className="absolute left-0 bottom-1 h-0.5 w-0 bg-[#6FE7C1] transition-all duration-300 group-hover:w-full" />
-                    </Link>
-                  ))}
-                </div>
-
-                <Button className="mt-10 w-[70%] border-2 border-[#6FE7C1] text-white bg-transparent rounded-xl py-2 font-semibold hover:bg-[#6FE7C1] hover:text-[#0B0F17] transition-all duration-300">
-                  Sign In
-                </Button>
-              </SheetContent>
-            </Sheet>
+                <motion.div
+                  initial={false}
+                  animate={{ rotate: isMenuOpen ? 90 : 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  {isMenuOpen ? (
+                    <X className="h-5 w-5" />
+                  ) : (
+                    <Menu className="h-5 w-5" />
+                  )}
+                </motion.div>
+              </Button>
+            </div>
           </div>
         </div>
+
+
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              className="lg:hidden fixed left-2 right-2 bg-[#0B0F17] border border-[#6FE7C1]/20 rounded-lg shadow-2xl overflow-hidden"
+              style={{ top: '4.5rem' }} 
+              initial={{ opacity: 0, scale: 0.95, y: -10 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: -10 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+            >
+              <div className="py-4 space-y-1 max-h-[75vh] overflow-y-auto">
+                {navItems.map((item, index) => (
+                  <motion.div
+                    key={item.href}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.2, delay: index * 0.1 }}
+                  >
+                    <Link
+                      href={item.href}
+                      className="block px-6 py-4 text-white hover:text-[#6FE7C1] hover:bg-[#6FE7C1]/10 transition-all duration-200 font-medium"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  </motion.div>
+                ))}
+
+
+                <motion.div
+                  className="border-t border-[#6FE7C1]/20 my-3"
+                  initial={{ opacity: 0, scaleX: 0 }}
+                  animate={{ opacity: 1, scaleX: 1 }}
+                  transition={{ duration: 0.3, delay: navItems.length * 0.1 }}
+                />
+
+
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.2, delay: (navItems.length + 1) * 0.1 }}
+                  className="px-6 py-3"
+                >
+                  <Button 
+                    className="w-full border-2 border-[#6FE7C1] text-white bg-transparent rounded-xl py-3 font-semibold hover:bg-[#6FE7C1] hover:text-[#0B0F17] transition-all duration-300 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Sign In
+                  </Button>
+                </motion.div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              className="lg:hidden fixed inset-0 bg-black/50 z-40"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsMenuOpen(false)}
+              style={{ top: '4rem' }} 
+            />
+          )}
+        </AnimatePresence>
       </div>
     </nav>
   );
