@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
-import { Ubuntu } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const inter = Ubuntu({
+const inter = Poppins({
   weight: ["300", "400", "500", "700"],
-  subsets:["greek"]
+  subsets:["devanagari"]
 });
 
 export const metadata: Metadata = {
   title: "OSCG",
   description: "Website for Open Source Connect Global",
+  icons:{
+    icon:"/logo1.png"
+  }
 };
 
 export default function RootLayout({
