@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const SponsersSection = () => {
   return (
-    <section className="py-20 bg-[#090E1A]">
+    <section className="py-1 bg-[#090E1A]">
       <div className="container mx-auto px-6">
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-4xl text-white font-bold md:text-5xl">
@@ -26,21 +26,14 @@ const SponsersSection = () => {
           <div className="grid gap-6 md:grid-cols-2 max-w-3xl mx-auto">
             <div className="flex h-32 items-center justify-center rounded-lg border border-white/10 bg-[#131C29]">
               <Image
-                src={"/google.png"}
+                src={"/nex.png"}
                 alt="google logo"
-                width={200}
-                height={200}
+                width={280}
+                height={280}
               />
             </div>
             <div className="flex h-32 items-center justify-center rounded-lg border border-white/10 bg-[#131C29]">
-              <span className="text-2xl font-bold text-muted-foreground">
-                <Image
-                  src={"/azure.png"}
-                  alt="azure logo"
-                  width={200}
-                  height={200}
-                />
-              </span>
+             
             </div>
           </div>
         </div>
@@ -56,19 +49,13 @@ const SponsersSection = () => {
 
           <div className="grid gap-6 md:grid-cols-3 max-w-4xl mx-auto">
             <div className="flex h-24 items-center justify-center rounded-lg border border-white/10 bg-[#131C29]">
-              <span className="text-lg font-semibold text-muted-foreground">
-                <Image src={"/aws.png"} alt="aws logo" width={80} height={80} />
-              </span>
+              
             </div>
             <div className="flex h-24 items-center justify-center rounded-lg border border-white/10 bg-[#131C29]">
-              <span className="text-lg font-semibold text-white">
-                GitHub
-              </span>
+             
             </div>
             <div className="flex h-24 items-center justify-center rounded-lg border border-white/10 bg-[#131C29]">
-              <span className="text-lg font-semibold text-white">
-                Docker
-              </span>
+            
             </div>
           </div>
         </div>
@@ -90,9 +77,7 @@ const SponsersSection = () => {
                   key={index}
                   className="flex h-20 items-center justify-center rounded-lg border border-white/10 bg-[#131C29]"
                 >
-                  <span className="text-sm font-semibold text-white/80">
-                    {company}
-                  </span>
+                
                 </div>
               )
             )}
@@ -124,9 +109,7 @@ const SponsersSection = () => {
                 key={index}
                 className="flex h-24 items-center justify-center rounded-lg border border-white/10 bg-[#131C29]"
               >
-                <span className="text-sm font-semibold text-white/80 text-center px-4">
-                  {partner}
-                </span>
+               
               </div>
             ))}
           </div>
