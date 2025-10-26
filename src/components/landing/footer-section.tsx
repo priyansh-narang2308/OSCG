@@ -26,11 +26,23 @@ const Footer = () => {
                 OSCG <span className="text-[#4FD1D0]">2026</span>
               </span>
             </div>
-            <p className="mb-6 text-sm text-white/60 max-w-xs">
+            <p className="mb-2 text-sm text-white/60 max-w-xs">
               Connecting the world through open source innovation and
               collaborative development.
             </p>
-            <div className="flex gap-3">
+
+            <Link
+              href="https://www.osconnect.org/"
+              target="_blank"
+              className="relative mt-3 inline-flex items-center justify-center rounded-xl border border-[#3AE3B8]/40 bg-[#0E1422] px-4 py-2 text-sm font-semibold text-[#5BEBB5] transition-all duration-300 hover:border-[#5BEBB5] hover:bg-[#1A2335] hover:shadow-[0_0_12px_#3AE3B8]/40"
+            >
+              <span className="relative z-10">
+                Visit OSCI 2025 — our past event
+              </span>
+              <span className="absolute inset-0 rounded-xl bg-linear-to-r from-[#3AE3B8]/10 to-transparent opacity-0 transition-opacity duration-300 hover:opacity-100" />
+            </Link>
+
+            <div className="mt-6 flex gap-3">
               <Button variant="ghost" size="icon" className="h-9 w-9">
                 <Twitter className="h-4 w-4" />
               </Button>
