@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
-const inter = Poppins({
+const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
-  subsets:["devanagari"]
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body suppressHydrationWarning={true} className={`${inter.className}`}>
+      <body suppressHydrationWarning={true} className={`${roboto.className}`}>
         {children}
       </body>
     </html>
