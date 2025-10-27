@@ -57,11 +57,12 @@ const Navigation = () => {
           </div>
 
           <div className="flex items-center gap-3">
-            <Button className="border-2 border-[#6FE7C1] text-white cursor-pointer bg-transparent rounded-xl px-5 py-2 font-semibold hover:bg-[#1a2e31] transition-colors">
-              Sign In
-            </Button>
+            <Link href="/sign-in">
+              <Button className="border-2 border-[#6FE7C1] text-white cursor-pointer bg-transparent rounded-xl px-5 py-2 font-semibold hover:bg-[#1a2e31] transition-colors">
+                Sign In
+              </Button>
+            </Link>
 
-            {/* Mobile menu button with smooth animation */}
             <div className="lg:hidden">
               <Button
                 variant="ghost"
@@ -85,75 +86,62 @@ const Navigation = () => {
           </div>
         </div>
 
-
-        <AnimatePresence>
-          {isMenuOpen && (
-            <motion.div
-              className="lg:hidden fixed left-2 right-2 bg-[#0B0F17] border border-[#6FE7C1]/20 rounded-lg shadow-2xl overflow-hidden"
-              style={{ top: '4.5rem' }} 
-              initial={{ opacity: 0, scale: 0.95, y: -10 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: -10 }}
-              transition={{ duration: 0.3, ease: "easeInOut" }}
-            >
-              <div className="py-4 space-y-1 max-h-[75vh] overflow-y-auto">
-                {navItems.map((item, index) => (
-                  <motion.div
-                    key={item.href}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.2, delay: index * 0.1 }}
-                  >
-                    <Link
-                      href={item.href}
-                      className="block px-6 py-4 text-white hover:text-[#6FE7C1] hover:bg-[#6FE7C1]/10 transition-all duration-200 font-medium"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
-                  </motion.div>
-                ))}
-
-
-                <motion.div
-                  className="border-t border-[#6FE7C1]/20 my-3"
-                  initial={{ opacity: 0, scaleX: 0 }}
-                  animate={{ opacity: 1, scaleX: 1 }}
-                  transition={{ duration: 0.3, delay: navItems.length * 0.1 }}
-                />
-
-
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.2, delay: (navItems.length + 1) * 0.1 }}
-                  className="px-6 py-3"
-                >
-                  <Button 
-                    className="w-full border-2 border-[#6FE7C1] text-white bg-transparent rounded-xl py-3 font-semibold hover:bg-[#6FE7C1] hover:text-[#0B0F17] transition-all duration-300 text-base"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Sign In
-                  </Button>
-                </motion.div>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-
-
-        <AnimatePresence>
-          {isMenuOpen && (
-            <motion.div
-              className="lg:hidden fixed inset-0 bg-black/50 z-40"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
+       <AnimatePresence>
+  {isMenuOpen && (
+    <motion.div
+      className="lg:hidden fixed left-2 right-2 bg-[#0B0F17] border border-[#6FE7C1]/20 rounded-lg shadow-2xl overflow-hidden z-50"
+      style={{ top: "4.5rem" }}
+      initial={{ opacity: 0, scale: 0.95, y: -10 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      exit={{ opacity: 0, scale: 0.95, y: -10 }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+    >
+      <div className="py-2 space-y-1 max-h-[55vh] overflow-y-auto">
+        {navItems.map((item, index) => (
+          <motion.div
+            key={item.href}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.2, delay: index * 0.1 }}
+          >
+            <Link
+              href={item.href}
+              className="block px-6 py-3 text-white hover:text-[#6FE7C1] hover:bg-[#6FE7C1]/10 transition-all duration-200 font-medium"
               onClick={() => setIsMenuOpen(false)}
-              style={{ top: '4rem' }} 
-            />
-          )}
-        </AnimatePresence>
+            >
+              {item.label}
+            </Link>
+          </motion.div>
+        ))}
+
+        <motion.div
+          className="border-t border-[#6FE7C1]/20 my-2"
+          initial={{ opacity: 0, scaleX: 0 }}
+          animate={{ opacity: 1, scaleX: 1 }}
+          transition={{ duration: 0.3, delay: navItems.length * 0.1 }}
+        />
+
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.2,
+            delay: (navItems.length + 1) * 0.1,
+          }}
+          className="px-6 py-2"
+        >
+          <Button
+            className="w-full border-2 border-[#6FE7C1] text-white bg-transparent rounded-xl py-3 font-semibold hover:bg-[#6FE7C1] hover:text-[#0B0F17] transition-all duration-300 text-base"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Sign In
+          </Button>
+        </motion.div>
+      </div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
       </div>
     </nav>
   );
