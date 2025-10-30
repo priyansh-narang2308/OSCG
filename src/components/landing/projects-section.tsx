@@ -87,17 +87,17 @@ const ProjectsSection = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.15,
-        delayChildren: 0.2
-      }
-    }
+        delayChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants: Variants = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       y: 60,
       scale: 0.9,
-      rotateX: -15
+      rotateX: -15,
     },
     visible: {
       opacity: 1,
@@ -107,54 +107,57 @@ const ProjectsSection = () => {
       transition: {
         duration: 0.8,
         ease: [0.25, 0.46, 0.45, 0.94],
-      }
-    }
+      },
+    },
   };
 
   const headerVariants: Variants = {
-    hidden: { 
-      opacity: 0, 
-      y: 40 
+    hidden: {
+      opacity: 0,
+      y: 40,
     },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
         duration: 0.7,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   const buttonVariants: Variants = {
-    hidden: { 
-      opacity: 0, 
-      scale: 0.8 
+    hidden: {
+      opacity: 0,
+      scale: 0.8,
     },
     visible: {
       opacity: 1,
       scale: 1,
       transition: {
         duration: 0.5,
-        ease: "backOut"
-      }
+        ease: "backOut",
+      },
     },
     hover: {
       scale: 1.05,
       boxShadow: "0 20px 40px rgba(91, 235, 181, 0.3)",
       transition: {
         duration: 0.2,
-        ease: "easeOut"
-      }
+        ease: "easeOut",
+      },
     },
     tap: {
-      scale: 0.98
-    }
+      scale: 0.98,
+    },
   };
 
   return (
-    <section id="projects" className="py-20 bg-[#090E1A] relative overflow-hidden">
-      <motion.div 
+    <section
+      id="projects"
+      className="py-20 bg-[#090E1A] relative overflow-hidden"
+    >
+      <motion.div
         className="absolute inset-0 opacity-5"
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 0.05 } : { opacity: 0 }}
@@ -172,7 +175,7 @@ const ProjectsSection = () => {
           animate={controls}
           className="mb-16 text-center"
         >
-          <motion.h2 
+          <motion.h2
             className="mb-4 text-4xl text-white font-bold md:text-5xl"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
@@ -180,7 +183,7 @@ const ProjectsSection = () => {
           >
             Our <span className="text-[#4FD1D0]">Projects</span>
           </motion.h2>
-          <motion.p 
+          <motion.p
             className="mx-auto max-w-2xl text-white/80 text-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -201,44 +204,48 @@ const ProjectsSection = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-            
               className={`group relative rounded-xl border-t-4 ${project.borderColor} bg-[#161A26] p-6 overflow-hidden backdrop-blur-sm border border-white/5`}
             >
-              <motion.div 
+              <motion.div
                 className={`absolute inset-0 bg-linear-to-br ${project.gradient} opacity-0 group-hover:opacity-100`}
                 transition={{ duration: 0.4 }}
               />
-              
-              <motion.div 
+
+              <motion.div
                 className={`absolute top-0 left-0 w-full h-1 bg-linear
-linear-to-r ${project.borderColor.replace('border-t-', '')} opacity-0 group-hover:opacity-100`}
+linear-to-r ${project.borderColor.replace(
+                  "border-t-",
+                  ""
+                )} opacity-0 group-hover:opacity-100`}
                 initial={{ scaleX: 0 }}
                 whileHover={{ scaleX: 1 }}
                 transition={{ duration: 0.5 }}
               />
 
               <div className="relative z-10">
-                <motion.div 
+                <motion.div
                   className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#2D313B] mb-4 group-hover:bg-[#363A45]"
-                  whileHover={{ 
+                  whileHover={{
                     scale: 1.1,
                     rotate: 5,
-                    transition: { duration: 0.3 }
+                    transition: { duration: 0.3 },
                   }}
                 >
                   <Github className="h-6 w-6 text-white" />
                 </motion.div>
 
-                <motion.h3 
+                <motion.h3
                   className="mb-3 text-xl font-semibold text-white group-hover:text-[#4FD1D0] transition-colors"
                   initial={{ opacity: 0, x: -20 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+                  animate={
+                    isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }
+                  }
                   transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                 >
                   {project.title}
                 </motion.h3>
 
-                <motion.p 
+                <motion.p
                   className="mb-4 text-sm text-white/60 leading-relaxed"
                   initial={{ opacity: 0 }}
                   animate={isInView ? { opacity: 1 } : { opacity: 0 }}
@@ -247,10 +254,12 @@ linear-to-r ${project.borderColor.replace('border-t-', '')} opacity-0 group-hove
                   {project.description}
                 </motion.p>
 
-                <motion.div 
+                <motion.div
                   className="mb-4 flex items-center gap-4 text-sm"
                   initial={{ opacity: 0, y: 10 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+                  animate={
+                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
+                  }
                   transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
                 >
                   <div className="flex items-center gap-2 bg-[#2D313B] rounded-xl px-3 py-1.5 group-hover:bg-[#363A45] transition-colors">
@@ -258,11 +267,13 @@ linear-to-r ${project.borderColor.replace('border-t-', '')} opacity-0 group-hove
                       className={`h-3 w-3 rounded-full ${project.languageColor}`}
                       whileHover={{ scale: 1.2 }}
                     />
-                    <span className="text-white text-sm font-medium">{project.language}</span>
+                    <span className="text-white text-sm font-medium">
+                      {project.language}
+                    </span>
                   </div>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                   className="mb-4 flex items-center gap-4 text-sm text-muted-foreground"
                   initial={{ opacity: 0 }}
                   animate={isInView ? { opacity: 1 } : { opacity: 0 }}
@@ -291,7 +302,6 @@ linear-to-r ${project.borderColor.replace('border-t-', '')} opacity-0 group-hove
                 <motion.a
                   href="#"
                   className="inline-flex items-center gap-2 hover:underline text-sm text-[#00D4AA] hover:text-[#5bebb5] font-medium group/link"
-
                   transition={{ duration: 0.2 }}
                 >
                   View Project
@@ -301,7 +311,7 @@ linear-to-r ${project.borderColor.replace('border-t-', '')} opacity-0 group-hove
                       duration: 1.5,
                       repeat: Infinity,
                       repeatType: "reverse",
-                      delay: index * 0.2
+                      delay: index * 0.2,
                     }}
                   >
                     <ExternalLink className="h-4 w-4" />
@@ -316,16 +326,13 @@ linear-to-r ${project.borderColor.replace('border-t-', '')} opacity-0 group-hove
           variants={buttonVariants}
           initial="hidden"
           animate={controls}
-          whileHover="hover"
-          whileTap="tap"
+     
           className="text-center p-10"
         >
           <Button
             size="lg"
             className="cursor-pointer text-black bg-[#5bebb5] hover:bg-[#4dddabd3] rounded-full px-10 py-6 font-semibold shadow-lg text-lg relative overflow-hidden"
           >
-
-      
             <span className="relative z-10">Explore All Projects</span>
           </Button>
         </motion.div>
