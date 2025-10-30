@@ -33,7 +33,7 @@ const HeroSection = () => {
           <div className="mb-20 flex flex-wrap items-center justify-center gap-4">
             <Button
               size="lg"
-              className="bg-[#00D6B2] hover:bg-[#00d6b2d9] text-black border-0"
+              className="bg-[#00D6B2] hover:bg-[#00d6b2d9] text-black border-0 cursor-pointer"
             >
               Register Now
               <ArrowRight className="ml-2 h-4 w-4" />
@@ -41,7 +41,7 @@ const HeroSection = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-green-400 bg-transparent hover:bg-white/10 text-white"
+              className="border-green-400 cursor-pointer bg-transparent hover:bg-white/10 text-white hover:text-white"
             >
               Explore Projects
             </Button>
