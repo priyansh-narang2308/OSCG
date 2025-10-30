@@ -275,11 +275,8 @@ const AboutUs = () => {
           ].map((stat, i) => (
             <motion.div 
               key={i}
-              variants={statVariants}
-              whileHover={{ 
-                scale: 1.05,
-                transition: { duration: 0.2 }
-              }}
+
+             
               className="p-4 rounded-lg bg-[#161B26]/50 backdrop-blur-sm border border-white/10"
             >
               <motion.div 
