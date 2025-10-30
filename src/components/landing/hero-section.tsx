@@ -33,7 +33,7 @@ const HeroSection = () => {
           <div className="mb-20 flex flex-wrap items-center justify-center gap-4">
             <Button
               size="lg"
-              className="bg-[#00D6B2] hover:bg-[#00d6b2d9] text-black border-0 cursor-pointer"
+              className="bg-[#00D6B2] hover:bg-[#00d6b2da] text-black border-0 cursor-pointer"
             >
               Register Now
               <ArrowRight className="ml-2 h-4 w-4" />
