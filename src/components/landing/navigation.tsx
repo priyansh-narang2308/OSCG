@@ -62,7 +62,12 @@ const Navigation = () => {
 
           <div className="flex items-center gap-3">
             <Link href="/sign-in">
-              <Button className="border-2 border-[#6FE7C1] text-white cursor-pointer bg-transparent rounded-xl px-5 py-2 font-semibold hover:bg-[#1a2e31] transition-colors">
+              <Button
+                variant="ghost"
+                className="w-[120px] border-2 border-[#6FE7C1] text-white bg-transparent rounded-lg py-3 font-semibold text-sm
+    hover:bg-white/10 hover:text-white cursor-pointer  transition-all duration-300
+    shadow"
+              >
                 Sign In
               </Button>
             </Link>
@@ -135,7 +140,9 @@ const Navigation = () => {
                   className="px-6 py-2"
                 >
                   <Button
-                    className="w-full border-2 border-[#6FE7C1] text-white bg-transparent rounded-xl py-3 font-semibold hover:bg-[#6FE7C1] hover:text-[#0B0F17] transition-all duration-300 text-base"
+                    className="w-50 border-2 border-[#6FE7C1] text-white bg-transparent rounded-full py-3 font-semibold text-lg
+             hover:bg-[#6FE7C1] hover:text-[#0B0F17] transition-all duration-300 shadow-[0_0_10px_rgba(111,231,193,0.3)]
+             hover:shadow-[0_0_20px_rgba(111,231,193,0.6)]"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Sign In

@@ -326,7 +326,6 @@ linear-to-r ${project.borderColor.replace(
           variants={buttonVariants}
           initial="hidden"
           animate={controls}
-     
           className="text-center p-10"
         >
           <Button

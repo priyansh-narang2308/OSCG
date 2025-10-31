@@ -151,13 +151,13 @@ const Footer = () => {
                 announcements
               </p>
             </div>
-            <div className="flex w-full max-w-md gap-2 justify-center lg:justify-start">
+            <div className="flex w-full max-w-xl mt-1 gap-4 justify-center">
               <Input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full rounded-full bg-[#363A43] px-4 py-4 text-white placeholder:text-white/60 border-none focus:ring-2 focus:ring-green-500"
+                className="w-full h-14 rounded-full bg-[#363A43] px-6 text-lg text-white placeholder:text-white/70 border-none shadow-md focus:ring-4 focus:ring-green-500/60"
               />
-              <Button className="cursor-pointer text-black bg-[#5bebb5] hover:bg-[#4dddabd3] rounded-full px-6 py-4 text-sm font-semibold shadow-lg">
+              <Button className="cursor-pointer h-14 text-black bg-[#5bebb5] hover:bg-[#4dddabd3] rounded-full px-10 text-lg font-semibold shadow-[0_10px_30px_rgba(91,235,181,0.35)]">
                 Subscribe
               </Button>
             </div>
