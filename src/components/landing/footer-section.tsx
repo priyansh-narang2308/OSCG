@@ -42,18 +42,34 @@ const Footer = () => {
               <span className="absolute inset-0 rounded-xl bg-linear-to-r from-[#3AE3B8]/10 to-transparent opacity-0 transition-opacity duration-300 hover:opacity-100" />
             </Link>
 
-            <div className="mt-6 flex gap-3">
-              <Button variant="ghost" size="icon" className="h-9 w-9">
-                <Twitter className="h-4 w-4" />
+            <div className="mt-6 flex gap-5">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-10 w-10 bg-white/10 cursor-pointer rounded-full flex items-center justify-center hover:bg-white/20 transition-colors shadow-none"
+              >
+                <Twitter className="h-7 w-7 text-white" />
               </Button>
-              <Button variant="ghost" size="icon" className="h-9 w-9">
-                <Linkedin className="h-4 w-4" />
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-10 w-10 bg-white/10 cursor-pointer rounded-full flex items-center justify-center hover:bg-white/20 transition-colors shadow-none"
+              >
+                <Linkedin className="h-7 w-7 text-white" />
               </Button>
-              <Button variant="ghost" size="icon" className="h-9 w-9">
-                <Github className="h-4 w-4" />
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-10 w-10 bg-white/10 cursor-pointer rounded-full flex items-center justify-center hover:bg-white/20 transition-colors shadow-none"
+              >
+                <Github className="h-7 w-7 text-white" />
               </Button>
-              <Button variant="ghost" size="icon" className="h-9 w-9">
-                <Instagram className="h-4 w-4" />
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-10 w-10 cursor-pointer bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors shadow-none"
+              >
+                <Instagram className="h-7 w-7 text-white" />
               </Button>
             </div>
           </div>
@@ -164,7 +180,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center text-center gap-4 border-t border-border pt-8 text-sm text-white/60 md:flex-row md:justify-between md:text-left">
+        <div className="w-full h-[1.5px] my-8 bg-linear-to-r from-transparent via-white/20 to-transparent" />
+        <div className="flex flex-col items-center text-center gap-4 pt-8 text-sm text-white/60 md:flex-row md:justify-between md:text-left">
           <p>&copy; 2026 Open Source Connect Global. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="#" className="text-white/60 transition-colors">

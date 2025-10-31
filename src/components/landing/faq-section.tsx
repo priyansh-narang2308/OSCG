@@ -81,20 +81,16 @@ const FAQ = () => {
           </Accordion>
         </div>
 
-        <div className="mx-auto mt-16 max-w-2xl rounded-lg bg-[#161A26] p-8 text-center">
-          <h3 className="mb-2 text-2xl font-semibold text-white">Still have questions?</h3>
-          <p className="mb-6 text-white/70">
+        <div className="mx-auto mt-20 w-[890px] max-w-full rounded-3xl bg-[#161A26]/60 backdrop-blur-md border border-white/10 p-12 text-center shadow-lg">
+          <h3 className="mb-3 text-2xl font-semibold text-white">
+            Still have questions?
+          </h3>
+          <p className="mb-8 text-white/60 text-lg">
             Our support team is here to help you with any queries
           </p>
           <Button
             size="lg"
-            className=" cursor-pointer
-            text-black                 
-            bg-[#5bebb5]               
-            hover:bg-[#4dddabd3]         
-            rounded-full              
-            px-10 py-4             
-            font-semibold         shadow-lg     "
+            className="cursor-pointer text-white bg-linear-to-r from-[#5BE7B5] to-[#82D4FA] hover:opacity-90 rounded-full px-10 py-4 font-semibold shadow-md transition-all"
           >
             Contact Support
           </Button>
