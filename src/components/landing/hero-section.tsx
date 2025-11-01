@@ -12,7 +12,7 @@ const HeroSection = () => {
       />
       <div className="absolute inset-0 bg-black/50" />
 
-      <div className="relative container mt-16 mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 text-center">
+      <div className="relative container mt-24 mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 text-center">
         <div className="flex flex-col items-center">
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-5 py-2.5 text-sm text-white backdrop-blur-md font-medium tracking-wide shadow-[0_0_15px_rgba(255,255,255,0.15),0_0_30px_rgba(184,255,249,0.2)] animate-[pulseGlow_2.5s_ease-in-out_infinite]">
             <Github className="h-4 w-4 text-[#B8FFF9] drop-shadow-[0_0_6px_#B8FFF9]" />
