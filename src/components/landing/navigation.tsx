@@ -26,7 +26,7 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-5">
         <div className="flex h-16 items-center justify-between">
-          <div className="flex items-center gap-3 pl-10">
+<div className="flex items-center gap-3 pl-0 sm:pl-10">
             <Link
               href="/"
               className="flex items-center gap-2 hover:opacity-90 transition"
