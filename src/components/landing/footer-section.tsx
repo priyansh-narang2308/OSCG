@@ -132,24 +132,20 @@ const Footer = () => {
                 <Mail className="mt-0.5 h-4 w-4 text-[#4FD1D0]" />
                 <div>
                   <div className="text-white/70">Email</div>
-                  <Link
-                    href="mailto:hello@oscg.org"
-                    className="text-white transition-colors"
-                  >
-                    hello@oscg.org
-                  </Link>
-                </div>
-              </li>
-              <li className="flex items-start gap-2">
-                <Phone className="mt-0.5 h-4 w-4 text-[#4FD1D0]" />
-                <div>
-                  <div className="text-white/70">Phone</div>
-                  <Link
-                    href="tel:+916666666666"
-                    className="text-white transition-colors"
-                  >
-                    +91 66666 66666
-                  </Link>
+                  <div className="flex flex-col">
+                    <Link
+                      href="mailto:hello@osconnect.org"
+                      className="text-white transition-colors hover:text-[#4FD1D0]"
+                    >
+                      hello@osconnect.org
+                    </Link>
+                    <Link
+                      href="mailto:events@osconnect.org"
+                      className="text-white transition-colors hover:text-[#4FD1D0]"
+                    >
+                      events@osconnect.org
+                    </Link>
+                  </div>
                 </div>
               </li>
             </ul>
