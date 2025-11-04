@@ -1,5 +1,6 @@
-import AboutUs from "@/components/landing/about-section";
+
 import LatestInsights from "@/components/landing/blog-section";
+import CoreValues from "@/components/landing/core-values";
 import FAQ from "@/components/landing/faq-section";
 import Footer from "@/components/landing/footer-section";
 import HeroSection from "@/components/landing/hero-section";
@@ -13,13 +14,12 @@ export default function Home() {
     <div>
       <Navigation />
       <HeroSection />
-      <AboutUs />
+      <CoreValues/>
       <ProjectsSection />
       <SpeakersSection />
       <SponsersSection />
       <LatestInsights />
       <FAQ />
-
       <Footer />
     </div>
   );

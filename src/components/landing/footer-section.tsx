@@ -1,6 +1,6 @@
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
-import { Instagram, Mail, Phone, Twitter } from "lucide-react";
+import { Instagram, Mail, Twitter } from "lucide-react";
 import { Linkedin } from "lucide-react";
 import { Github } from "lucide-react";
 import Image from "next/image";
