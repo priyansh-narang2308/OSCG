@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const SponsersSection = () => {
   return (
-    <section className="py-40 bg-[#090E1A]">
+    <section className="py-20 bg-[#090E1A]">
       <div className="container mx-auto px-6">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-4xl text-white font-bold md:text-5xl">
