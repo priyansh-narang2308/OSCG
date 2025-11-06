@@ -21,12 +21,12 @@ const Navigation = () => {
 
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md"
+      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md flex justify-center"
       style={{ backgroundColor: "#0B0F17" }}
     >
-      <div className="container mx-auto px-5">
+      <div className="container px-4 md:px-6">
         <div className="flex h-16 items-center justify-between">
-          <div className="flex items-center gap-3 pl-10">
+          <div className="flex items-center gap-3">
             <Link
               href="/"
               className="flex items-center gap-2 hover:opacity-90 transition"
@@ -45,12 +45,12 @@ const Navigation = () => {
             </Link>
           </div>
 
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="relative text-white font-medium transition-all group px-2 py-1"
+                className="relative text-white font-medium transition-all group px-3 py-2"
               >
                 <span className="relative z-10 group-hover:text-[#6FE7C1] transition-colors duration-300">
                   {item.label}
@@ -60,9 +60,9 @@ const Navigation = () => {
             ))}
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4">
             <Link href="/sign-in">
-              <Button className="border-2 border-[#6FE7C1] text-white cursor-pointer bg-transparent rounded-xl px-5 py-2 font-semibold hover:bg-[#1a2e31] transition-colors">
+              <Button className="border-2 border-[#6FE7C1] text-white cursor-pointer bg-transparent rounded-xl px-6 py-2 font-semibold hover:bg-[#1a2e31] transition-colors">
                 Sign In
               </Button>
             </Link>
@@ -93,14 +93,14 @@ const Navigation = () => {
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
-              className="lg:hidden fixed left-2 right-2 bg-[#0B0F17] border border-[#6FE7C1]/20 rounded-lg shadow-2xl overflow-hidden z-50"
+              className="lg:hidden fixed left-4 right-4 bg-[#0B0F17] border border-[#6FE7C1]/20 rounded-lg shadow-2xl overflow-hidden z-50"
               style={{ top: "4.5rem" }}
               initial={{ opacity: 0, scale: 0.95, y: -10 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: -10 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
-              <div className="py-2 space-y-1 max-h-[55vh] overflow-y-auto">
+              <div className="py-3 space-y-1 max-h-[55vh] overflow-y-auto">
                 {navItems.map((item, index) => (
                   <motion.div
                     key={item.href}
@@ -110,7 +110,7 @@ const Navigation = () => {
                   >
                     <Link
                       href={item.href}
-                      className="block px-6 py-3 text-white hover:text-[#6FE7C1] hover:bg-[#6FE7C1]/10 transition-all duration-200 font-medium"
+                      className="block px-6 py-3 text-white hover:text-[#6FE7C1] hover:bg-[#6FE7C1]/10 transition-all duration-200 font-medium rounded-md mx-2"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {item.label}
@@ -119,7 +119,7 @@ const Navigation = () => {
                 ))}
 
                 <motion.div
-                  className="border-t border-[#6FE7C1]/20 my-2"
+                  className="border-t border-[#6FE7C1]/20 my-3 mx-4"
                   initial={{ opacity: 0, scaleX: 0 }}
                   animate={{ opacity: 1, scaleX: 1 }}
                   transition={{ duration: 0.3, delay: navItems.length * 0.1 }}
@@ -132,7 +132,7 @@ const Navigation = () => {
                     duration: 0.2,
                     delay: (navItems.length + 1) * 0.1,
                   }}
-                  className="px-6 py-2"
+                  className="px-6 py-3"
                 >
                   <Button
                     className="w-full border-2 border-[#6FE7C1] text-white bg-transparent rounded-xl py-3 font-semibold hover:bg-[#6FE7C1] hover:text-[#0B0F17] transition-all duration-300 text-base"

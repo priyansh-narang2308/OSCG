@@ -94,7 +94,7 @@ const LatestInsights = () => {
           ))}
         </div>
 
-        <div className="text-center p-10">
+        <div className="text-center px-10">
           <Button
             size="lg"
             className=" cursor-pointer

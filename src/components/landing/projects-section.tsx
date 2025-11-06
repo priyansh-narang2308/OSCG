@@ -327,7 +327,7 @@ linear-to-r ${project.borderColor.replace(
           initial="hidden"
           animate={controls}
      
-          className="text-center p-10"
+          className="text-center px-10"
         >
           <Button
             size="lg"
