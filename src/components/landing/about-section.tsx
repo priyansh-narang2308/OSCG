@@ -43,73 +43,73 @@ const AboutUs = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.2,
-        delayChildren: 0.3
-      }
-    }
+        delayChildren: 0.3,
+      },
+    },
   };
 
   const fadeUp: Variants = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       y: 60,
-      scale: 0.95
+      scale: 0.95,
     },
     visible: {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: { 
-        duration: 0.8, 
+      transition: {
+        duration: 0.8,
         ease: [0.25, 0.46, 0.45, 0.94],
       },
     },
   };
 
   const cardVariants: Variants = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       y: 40,
-      rotateX: -10
+      rotateX: -10,
     },
     visible: {
       opacity: 1,
       y: 0,
       rotateX: 0,
-      transition: { 
-        duration: 0.7, 
+      transition: {
+        duration: 0.7,
         ease: "easeOut",
       },
     },
   };
 
   const statVariants: Variants = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       scale: 0.8,
-      y: 20
+      y: 20,
     },
     visible: {
       opacity: 1,
       scale: 1,
       y: 0,
-      transition: { 
+      transition: {
         duration: 0.6,
-        ease: "backOut"
+        ease: "backOut",
       },
     },
   };
 
   const missionVariants: Variants = {
-    hidden: { 
+    hidden: {
       opacity: 0,
-      x: -50
+      x: -50,
     },
     visible: {
       opacity: 1,
       x: 0,
-      transition: { 
+      transition: {
         duration: 0.8,
-        ease: "easeOut"
+        ease: "easeOut",
       },
     },
   };
@@ -119,7 +119,7 @@ const AboutUs = () => {
       ref={ref}
       className="py-20 bg-[#090E1A] text-white relative overflow-hidden"
     >
-      <motion.div 
+      <motion.div
         className="absolute inset-0 opacity-10"
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 0.1 } : { opacity: 0 }}
@@ -150,13 +150,13 @@ const AboutUs = () => {
           animate={controls}
           className="mb-16 text-center"
         >
-          <motion.h2 
+          <motion.h2
             variants={fadeUp}
             className="mb-6 text-4xl font-bold md:text-5xl"
           >
             About <span className="text-[#4AD0CD]">Us</span>
           </motion.h2>
-          <motion.p 
+          <motion.p
             variants={fadeUp}
             className="mx-auto max-w-3xl text-lg text-white/80"
           >
@@ -175,14 +175,14 @@ const AboutUs = () => {
           className="flex justify-center"
         >
           <div className="max-w-6xl w-full px-4">
-            <motion.div 
-              whileHover={{ 
+            <motion.div
+              whileHover={{
                 scale: 1.02,
-                transition: { duration: 0.3 }
+                transition: { duration: 0.3 },
               }}
               className="mb-16 rounded-lg border-l-4 border-[#3BD1C8] bg-[#161B27] p-8 relative overflow-hidden"
             >
-              <motion.div 
+              <motion.div
                 className="absolute inset-0 bg-linear-to-r from-[#3BD1C8]/10 to-transparent"
                 initial={{ x: "-100%" }}
                 animate={isInView ? { x: 0 } : { x: "-100%" }}
@@ -198,9 +198,9 @@ const AboutUs = () => {
                   difference. We believe in the power of community-driven
                   innovation and the democratization of technology through open
                   collaboration. We actively tear down barriers to entry,
-                  providing the tools and knowledge necessary for anyone to become
-                  a contributor. Our goal is to foster a truly inclusive future,
-                  built by the hands of a global and diverse community.
+                  providing the tools and knowledge necessary for anyone to
+                  become a contributor. Our goal is to foster a truly inclusive
+                  future, built by the hands of a global and diverse community.
                 </p>
               </div>
             </motion.div>
@@ -234,27 +234,30 @@ const AboutUs = () => {
               <motion.div
                 key={i}
                 variants={cardVariants}
-                
                 className="flex justify-center"
               >
                 <div className="rounded-lg border border-white/40 bg-[#161B26] p-6 max-w-sm w-full relative overflow-hidden group">
-                  <motion.div 
+                  <motion.div
                     className="absolute inset-0 bg-linear-to-br from-[#3BD1C8]/20 to-transparent opacity-0 group-hover:opacity-100"
                     transition={{ duration: 0.4 }}
                   />
-                  
-                  <motion.div 
+
+                  <motion.div
                     className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-[#2FD2C1] relative z-10"
-                    whileHover={{ 
+                    whileHover={{
                       scale: 1.1,
                       rotate: 5,
-                      transition: { duration: 0.3 }
+                      transition: { duration: 0.3 },
                     }}
                   >
                     {item.icon}
                   </motion.div>
-                  <h3 className="mb-3 text-xl font-semibold relative z-10">{item.title}</h3>
-                  <p className="text-md text-white/80 relative z-10">{item.desc}</p>
+                  <h3 className="mb-3 text-xl font-semibold relative z-10">
+                    {item.title}
+                  </h3>
+                  <p className="text-md text-white/80 relative z-10">
+                    {item.desc}
+                  </p>
                 </div>
               </motion.div>
             ))}
@@ -273,20 +276,18 @@ const AboutUs = () => {
             { end: 50, label: "Expert Speakers" },
             { end: 100, label: "Community Partners" },
           ].map((stat, i) => (
-            <motion.div 
+            <motion.div
               key={i}
-
-             
-              className="p-4 rounded-lg bg-[#161B26]/50 backdrop-blur-sm border border-white/10"
+              className="p-4 rounded-lg bg-[#161B26]/50 backdrop-blur-sm"
             >
-              <motion.div 
+              <motion.div
                 className="mb-2 text-4xl font-bold text-[#6ACFDD]"
                 initial={{ scale: 0.5 }}
                 animate={isInView ? { scale: 1 } : { scale: 0.5 }}
-                transition={{ 
+                transition={{
                   delay: 0.8 + i * 0.1,
                   type: "spring",
-                  stiffness: 100
+                  stiffness: 100,
                 }}
               >
                 {isInView ? <Counter end={stat.end} /> : "0"}

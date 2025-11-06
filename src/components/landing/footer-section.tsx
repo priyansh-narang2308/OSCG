@@ -1,6 +1,6 @@
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
-import { Instagram, Mail, Phone, Twitter } from "lucide-react";
+import { Instagram, Mail, Twitter } from "lucide-react";
 import { Linkedin } from "lucide-react";
 import { Github } from "lucide-react";
 import Image from "next/image";
@@ -42,18 +42,34 @@ const Footer = () => {
               <span className="absolute inset-0 rounded-xl bg-linear-to-r from-[#3AE3B8]/10 to-transparent opacity-0 transition-opacity duration-300 hover:opacity-100" />
             </Link>
 
-            <div className="mt-6 flex gap-3">
-              <Button variant="ghost" size="icon" className="h-9 w-9">
-                <Twitter className="h-4 w-4" />
+            <div className="mt-6 flex gap-5">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-10 w-10 bg-white/10 cursor-pointer rounded-full flex items-center justify-center hover:bg-white/20 transition-colors shadow-none"
+              >
+                <Twitter className="h-7 w-7 text-white" />
               </Button>
-              <Button variant="ghost" size="icon" className="h-9 w-9">
-                <Linkedin className="h-4 w-4" />
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-10 w-10 bg-white/10 cursor-pointer rounded-full flex items-center justify-center hover:bg-white/20 transition-colors shadow-none"
+              >
+                <Linkedin className="h-7 w-7 text-white" />
               </Button>
-              <Button variant="ghost" size="icon" className="h-9 w-9">
-                <Github className="h-4 w-4" />
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-10 w-10 bg-white/10 cursor-pointer rounded-full flex items-center justify-center hover:bg-white/20 transition-colors shadow-none"
+              >
+                <Github className="h-7 w-7 text-white" />
               </Button>
-              <Button variant="ghost" size="icon" className="h-9 w-9">
-                <Instagram className="h-4 w-4" />
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-10 w-10 cursor-pointer bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors shadow-none"
+              >
+                <Instagram className="h-7 w-7 text-white" />
               </Button>
             </div>
           </div>
@@ -116,24 +132,20 @@ const Footer = () => {
                 <Mail className="mt-0.5 h-4 w-4 text-[#4FD1D0]" />
                 <div>
                   <div className="text-white/70">Email</div>
-                  <Link
-                    href="mailto:hello@oscg.org"
-                    className="text-white transition-colors"
-                  >
-                    hello@oscg.org
-                  </Link>
-                </div>
-              </li>
-              <li className="flex items-start gap-2">
-                <Phone className="mt-0.5 h-4 w-4 text-[#4FD1D0]" />
-                <div>
-                  <div className="text-white/70">Phone</div>
-                  <Link
-                    href="tel:+916666666666"
-                    className="text-white transition-colors"
-                  >
-                    +91 66666 66666
-                  </Link>
+                  <div className="flex flex-col">
+                    <Link
+                      href="mailto:hello@osconnect.org"
+                      className="text-white transition-colors hover:text-[#4FD1D0]"
+                    >
+                      hello@osconnect.org
+                    </Link>
+                    <Link
+                      href="mailto:events@osconnect.org"
+                      className="text-white transition-colors hover:text-[#4FD1D0]"
+                    >
+                      events@osconnect.org
+                    </Link>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -151,20 +163,21 @@ const Footer = () => {
                 announcements
               </p>
             </div>
-            <div className="flex w-full max-w-md gap-2 justify-center lg:justify-start">
+            <div className="flex w-full max-w-xl mt-1 gap-4 justify-center">
               <Input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full rounded-full bg-[#363A43] px-4 py-4 text-white placeholder:text-white/60 border-none focus:ring-2 focus:ring-green-500"
+                className="w-full h-14 rounded-full bg-[#363A43] px-6 text-lg text-white placeholder:text-white/70 border-none shadow-md focus:ring-4 focus:ring-green-500/60"
               />
-              <Button className="cursor-pointer text-black bg-[#5bebb5] hover:bg-[#4dddabd3] rounded-full px-6 py-4 text-sm font-semibold shadow-lg">
+              <Button className="cursor-pointer h-14 text-black bg-[#5bebb5] hover:bg-[#4dddabd3] rounded-full px-10 text-lg font-semibold shadow-[0_10px_30px_rgba(91,235,181,0.35)]">
                 Subscribe
               </Button>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col items-center text-center gap-4 border-t border-border pt-8 text-sm text-white/60 md:flex-row md:justify-between md:text-left">
+        <div className="w-full h-[1.5px] my-8 bg-linear-to-r from-transparent via-white/20 to-transparent" />
+        <div className="flex flex-col items-center text-center gap-4 pt-8 text-sm text-white/60 md:flex-row md:justify-between md:text-left">
           <p>&copy; 2026 Open Source Connect Global. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="#" className="text-white/60 transition-colors">

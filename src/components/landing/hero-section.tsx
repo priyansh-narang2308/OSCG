@@ -1,5 +1,6 @@
 import { ArrowRight, Github } from "lucide-react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -31,20 +32,24 @@ const HeroSection = () => {
           </p>
 
           <div className="mb-20 flex flex-wrap items-center justify-center gap-4">
-            <Button
-              size="lg"
-              className="bg-[#00D6B2] hover:bg-[#00d6b2da] text-black border-0 cursor-pointer"
-            >
-              Register Now
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link href={"/sign-in"}>
+              <Button
+                size="lg"
+                className="bg-[#00D6B2] hover:bg-[#00d6b2da] text-black border-0 cursor-pointer"
+              >
+                Register Now
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
+            <Link href="/projects">
             <Button
               size="lg"
               variant="outline"
               className="border-green-400 cursor-pointer bg-transparent hover:bg-white/10 text-white hover:text-white"
-            >
+              >
               Explore Projects
             </Button>
+              </Link>
           </div>
 
           <div className="grid w-full max-w-4xl grid-cols-2 gap-8 sm:gap-10 lg:grid-cols-4">

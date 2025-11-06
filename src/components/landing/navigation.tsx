@@ -26,7 +26,7 @@ const Navigation = () => {
     >
       <div className="container px-4 md:px-6">
         <div className="flex h-16 items-center justify-between">
-          <div className="flex items-center gap-3">
+<div className="flex items-center gap-3 pl-0 sm:pl-10">
             <Link
               href="/"
               className="flex items-center gap-2 hover:opacity-90 transition"
@@ -135,7 +135,9 @@ const Navigation = () => {
                   className="px-6 py-3"
                 >
                   <Button
-                    className="w-full border-2 border-[#6FE7C1] text-white bg-transparent rounded-xl py-3 font-semibold hover:bg-[#6FE7C1] hover:text-[#0B0F17] transition-all duration-300 text-base"
+                    className="w-50 border-2 border-[#6FE7C1] text-white bg-transparent rounded-full py-3 font-semibold text-lg
+             hover:bg-[#6FE7C1] hover:text-[#0B0F17] transition-all duration-300 shadow-[0_0_10px_rgba(111,231,193,0.3)]
+             hover:shadow-[0_0_20px_rgba(111,231,193,0.6)]"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Sign In
