@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning={true} className={`${roboto.className}`}>
         {children}
+        <SpeedInsights/>
       </body>
     </html>
   );
