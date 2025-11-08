@@ -9,20 +9,22 @@ import SpeakersSection from "@/components/landing/speakers-section";
 import SponsersSection from "@/components/landing/sponsors-section";
 import Signup from "@/components/AuthPage/Signup";
 import Signin from "@/components/AuthPage/Signin";
+import  About from "@/components/Aboutus/About";
 
 export default function Home() {
   return (
     <div>
       <Navigation />
-      <HeroSection />
+      {/* <HeroSection />
       <AboutUs />
       <ProjectsSection />
       <SpeakersSection />
       <SponsersSection />
       <LatestInsights />
-      <FAQ />
-     
+      <FAQ /> */}
+       <About />
       <Footer />
+    
     </div>
   );
 }
