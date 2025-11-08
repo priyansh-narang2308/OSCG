@@ -7,8 +7,7 @@ import Navigation from "@/components/landing/navigation";
 import ProjectsSection from "@/components/landing/projects-section";
 import SpeakersSection from "@/components/landing/speakers-section";
 import SponsersSection from "@/components/landing/sponsors-section";
-import Signup from "@/components/AuthPage/Signup";
-import Signin from "@/components/AuthPage/Signin";
+
 import  About from "@/components/Aboutus/About";
 
 export default function Home() {
