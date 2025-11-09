@@ -155,7 +155,7 @@ const ProjectsSection = () => {
   return (
     <section
       id="projects"
-      className="py-20 bg-[#090E1A] relative overflow-hidden"
+      className="py-1 bg-[#090E1A] relative overflow-hidden"
     >
       <motion.div
         className="absolute inset-0 opacity-5"
