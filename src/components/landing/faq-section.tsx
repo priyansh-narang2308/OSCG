@@ -70,9 +70,10 @@ const FAQ = () => {
                 value={`item-${index}`}
                 className="rounded-lg bg-[#161A26] px-6"
               >
-                <AccordionTrigger className="text-left text-white hover:no-underline cursor-pointer">
-                  {faq.question}
-                </AccordionTrigger>
+               <AccordionTrigger className="text-left text-white hover:no-underline cursor-pointer [&>svg]:text-[#00D4AA]">
+  {faq.question}
+</AccordionTrigger>
+
                 <AccordionContent className="text-white/60">
                   {faq.answer}
                 </AccordionContent>
@@ -90,7 +91,7 @@ const FAQ = () => {
           </p>
           <Button
             size="lg"
-            className="cursor-pointer text-white bg-linear-to-r from-[#5BE7B5] to-[#82D4FA] hover:opacity-90 rounded-full px-10 py-4 font-semibold shadow-md transition-all"
+            className="cursor-pointer text-black/80 bg-linear-to-r from-[#5BE7B5] to-[#82D4FA] hover:opacity-90 rounded-full px-10 py-4 font-semibold shadow-md transition-all"
           >
             Contact Support
           </Button>

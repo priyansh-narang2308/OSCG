@@ -71,8 +71,7 @@ const CoreValues = () => {
               WHAT DRIVES US FORWARD
             </span>
             <div className="flex gap-1">
-              <div className="w-2 h-2 rounded-full bg-[#1AD5BD]" />
-            </div>
+<div className="w-2 h-2 rounded-full bg-radial from-[#1AD5BD] to-transparent" />           </div>
           </div>
         </motion.div>
 

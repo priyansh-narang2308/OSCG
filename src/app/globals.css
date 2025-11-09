@@ -121,3 +121,7 @@
   }
 }
 
+
+.glow-dot {
+  background: radial-gradient(circle, #1AD5BD 0%, rgba(26, 213, 189, 0) 70%);
+}
