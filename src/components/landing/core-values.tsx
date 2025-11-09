@@ -50,7 +50,7 @@ const CoreValues = () => {
 
   const fadeUp = {
     hidden: { opacity: 0, y: 40 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1} },
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
   };
 
   return (
@@ -76,7 +76,6 @@ const CoreValues = () => {
           </div>
         </motion.div>
 
-
         <motion.div className="flex justify-center mb-12" variants={fadeUp}>
           <div className="w-24 h-1 bg-[#039D86] rounded-full"></div>
         </motion.div>
@@ -87,18 +86,29 @@ const CoreValues = () => {
           </h2>
         </motion.div>
 
-        <motion.div className="text-center mb-4 max-w-3xl mx-auto" variants={fadeUp}>
+        <motion.div
+          className="text-center mb-4 max-w-3xl mx-auto"
+          variants={fadeUp}
+        >
           <p className="text-xl text-white/60">
             At Open Source Connect Global, we believe in the power of{" "}
             <span className="text-[#00D6B2] font-medium">collaboration</span>,{" "}
-            <span className="text-[#89CFEB] font-medium">continuous learning</span>, and{" "}
-            <span className="text-[#00D6B2] font-medium">innovative thinking.</span>
+            <span className="text-[#89CFEB] font-medium">
+              continuous learning
+            </span>
+            , and{" "}
+            <span className="text-[#00D6B2] font-medium">
+              innovative thinking.
+            </span>
           </p>
         </motion.div>
 
-        <motion.div className="text-center mb-16 max-w-3xl mx-auto" variants={fadeUp}>
+        <motion.div
+          className="text-center mb-16 max-w-3xl mx-auto"
+          variants={fadeUp}
+        >
           <p className="text-white/60">
-            These core values drive everything we do and shape our vibrant
+            These values guide every initiative we take and shape our vibrant
             community of developers, creators, and visionaries.
           </p>
         </motion.div>
@@ -108,10 +118,7 @@ const CoreValues = () => {
           variants={containerVariants}
         >
           {values.map((value, index) => {
-            const backgroundColor =
-              index === 1
-                ? "#203A53"
-                : "#0D494D";
+            const backgroundColor = index === 1 ? "#203A53" : "#0D494D";
 
             return (
               <motion.div
@@ -141,8 +148,9 @@ const CoreValues = () => {
                       }}
                     >
                       <value.icon
-                        className={`w-8 h-8 ${index === 1 ? "text-[#60A5FA]" : "text-[#1AD5BD]"
-                          }`}
+                        className={`w-8 h-8 ${
+                          index === 1 ? "text-[#60A5FA]" : "text-[#1AD5BD]"
+                        }`}
                         strokeWidth={1.5}
                       />
                     </div>
