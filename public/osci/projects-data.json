@@ -1,0 +1,233 @@
+[
+  {
+    "email": "priyanshnarang23@gmail.com",
+    "name": "Priyansh Narang",
+    "projectName": "KiddieGPT",
+    "projectDescription": "KiddieGPT is an AI-powered web application that generates personalized stories for children. The platform allows kids to choose story themes, customize characters, and enjoy engaging bedtime tales designed to spark imagination and learning. Built with modern web technologies, it provides a safe and interactive environment for children to explore creative storytelling.",
+    "techStack": "TypeScript,CSS,JavaScript,NextJS,ShadcnUI,PostgreSQL,NeonDB,Replicate AI,GeminiAI",
+    "tags": "AIForKids, ChildSafeAI, EdTech, InteractiveLearning, FunWithAI, GPTForKids, VoiceAssistant, KidFriendlyDesign, ConversationalAI, GamifiedLearning, ReactJS, TailwindCSS, GeminiAPI, SpeechToText, TextToSpeech, ParentControls",
+    "projectGithubLink": "https://github.com/priyansh-narang2308/KiddieGPT-AI-Kids-Story-Generator",
+    "projectSiteLink": "",
+    "userLinkedin": "https://www.linkedin.com/in/priyansh-narang230805"
+  },
+  {
+    "email": "alimuneerali245@gmail.com",
+    "name": "Muneer Ali",
+    "projectName": "DocMagic",
+    "projectDescription": "DocMagic is an open-source, AI-driven platform that empowers users to generate professional documents through simple prompts. The platform supports resumes, CVs, cover letters, SOPs, and more using advanced AI models. It delivers instant, personalized, and ATS-optimized content with seamless export options to LaTeX, PDF, and PowerPoint formats.",
+    "techStack": "Nextjs,typescript,tailwindcss,supabase etc",
+    "tags": "opensource, firstcontribution, goodfirstissue, ai, resume-builder, document-generator, latex, gemini-api, reactjs, expressjs, supabase, tailwindcss, pptxgenjs, career-tools, ats-resume, developer-tools, hacktoberfest, gsoc, education-tech, docmagic",
+    "projectGithubLink": "https://www.github.com/Muneerali199/DocMagic",
+    "projectSiteLink": "https://doc-magic-heob.vercel.app/",
+    "userLinkedin": "https://www.linkedin.com/in/muneer-ali"
+  },
+  {
+    "email": "alimuneerali245@gmail.com",
+    "name": "Muneer Ali",
+    "projectName": "Thunder",
+    "projectDescription": "Thunder is an open-source, full-stack website builder that enables developers, startups, and entrepreneurs to create dynamic, production-ready websites in minutes. Powered by AI, it generates responsive landing pages, dashboards, and multi-page sites with just a prompt. The platform eliminates repetitive setup and provides full creative and functional control.",
+    "techStack": "react,typescript,nodejs",
+    "tags": "opensource, website-builder, ai, fullstack, nextjs, nodejs, reactjs, tailwindcss, shadcn, gemini-api, prompt-to-code, landing-page, startup-tools, developer-tools, nocode, lowcode, hacktoberfest, goodfirstissue, firstcontribution, thunder",
+    "projectGithubLink": "https://www.github.com/Muneerali199/thunder",
+    "projectSiteLink": "thunder-muneer.vercel.app",
+    "userLinkedin": "https://www.linkedin.com/in/muneer-ali"
+  },
+  {
+    "email": "nishantelite007@gmail.com",
+    "name": "Nishant Rana",
+    "projectName": "HR Roadways",
+    "projectDescription": "HR Roadways is a comprehensive platform designed to provide users with an intuitive interface to check bus routes, timings, and real-time updates for government bus services. The application offers a user-friendly experience for travelers to access transportation information efficiently and plan their journeys effectively.",
+    "techStack": "React with Vite Framework",
+    "tags": "Tourism, Travel, Transportation, BusRoutes, RealTimeUpdates, GovernmentServices, TravelPlanning, PublicTransport",
+    "projectGithubLink": "https://github.com/NishantRana07/HrRoadways",
+    "projectSiteLink": "https://hr-roadways.vercel.app/",
+    "userLinkedin": "https://www.linkedin.com/in/nishantrana07"
+  },
+  {
+    "email": "mohakgupta0981@gmail.com",
+    "name": "Mohak Gupta",
+    "projectName": "CodeConclave",
+    "projectDescription": "CodeConclave is a cloud-based collaborative IDE platform with GPU support, built for researchers and AI engineers. The platform provides advanced developer tools and collaborative coding capabilities, enabling teams to work together efficiently on complex projects with powerful computational resources.",
+    "techStack": "React (Monaco Editor, Styled Components, React Router, Axios) + Node.js, Express, MongoDB (Mongoose), JWT for full-stack development.",
+    "tags": "Full Stack, MERN, React, Node.js, Express, MongoDB, Cloud IDE, GPU Support, Code Collaboration, Developer Tools, Web App, MLOps, Research Tools",
+    "projectGithubLink": "https://github.com/lukiod/CodeConclave",
+    "projectSiteLink": "",
+    "userLinkedin": "https://www.linkedin.com/in/gupta-mohak/"
+  },
+  {
+    "email": "prajapativivek998@gmail.com",
+    "name": "Vivek Kumar",
+    "projectName": "VigyBag",
+    "projectDescription": "VigyBag is an e-commerce platform designed to empower villagers by providing them with a nationwide marketplace to sell their eco-friendly products across India. The platform bridges the gap between rural artisans and urban consumers, ensuring that sustainable creations reach a wider audience and support local communities.",
+    "techStack": "JavaScript, React.js, Node js,Kotlin, Android, Figma, Redux Toolkit",
+    "tags": "VigyBag, ecommerce, EmpowerArtisans, HandcraftedIndia, EcoFriendlyCrafts, NationwideMarketplace, OpenSourceEcommerce, SustainableShopping, good-first-issue, sustainable",
+    "projectGithubLink": "https://github.com/codervivek5/VigyBag",
+    "projectSiteLink": "https://vigy-bag.vercel.app/",
+    "userLinkedin": "https://www.linkedin.com/in/codervivek/"
+  },
+  {
+    "email": "aditya.kumar.cs23@ggits.net",
+    "name": "Aditya Kumar",
+    "projectName": "NotesVault",
+    "projectDescription": "NotesVault is a beginner-friendly, open-source web app designed to help students store, browse, and manage academic notes and previous year questions in one place. The platform provides an organized repository for educational content, making it easier for students to access and share study materials effectively.",
+    "techStack": "HTML,CSS,JS",
+    "tags": "StudentNotes, StudyMaterial, NotesSharingPlatform, Education, AcademicResources, StudentTools, OpenSource, LearningPlatform",
+    "projectGithubLink": "https://github.com/opensource-society/notesvault",
+    "projectSiteLink": "",
+    "userLinkedin": "https://linkedin.com/in/adityai0"
+  },
+  {
+    "email": "fbyogesh111@gmail.com",
+    "name": "Yogesh Kumar",
+    "projectName": "AlchEmaiLyst",
+    "projectDescription": "AlchEmaiLyst is a three-agent system powered by LLMs and proxy with Google OAuth 2.0 for automating emails. The platform summarizes, composes, and sends emails automatically while detecting and deleting spam messages. It provides intelligent email management capabilities for improved productivity.",
+    "techStack": "React, Vite, Tailwind Css, Gemini API, Alchemyst API, Google OAuth",
+    "tags": "Email, AI, Automation, GenAI, AI agents, EmailAutomation, ProductivityTools, SmartEmail, LLMIntegration",
+    "projectGithubLink": "https://github.com/Coden-inja/alchEmaiLyst",
+    "projectSiteLink": "https://x.com/Yoges_ai/status/1941754822501466365    ,     https://www.linkedin.com/posts/yogesh-kumar-299298260_ai-llm-emailsimplified-activity-7347525411548950528-9ZOy?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEAdKJUBl1k6MjQPY4nRv7ETY73SPZ5kOYY",
+    "userLinkedin": "https://www.linkedin.com/in/yogesh-kumar-299298260/"
+  },
+  {
+    "email": "himanshuheda123@gmail.com",
+    "name": "Himanshu Heda",
+    "projectName": "Zip Tales",
+    "projectDescription": "ZipTales is a cutting-edge news verification platform that combines artificial intelligence with community-driven validation to combat misinformation and promote trustworthy journalism. The platform provides tools to verify news credibility in real-time, creating a more informed society through AI-powered content analysis and community verification.",
+    "techStack": "React 18.3.1, TypeScript 5.5.3, Tailwind CSS 3.4.1, Vite 5.4.2, React Router DOM 6.8.1, Google Gemini AI, News API, SerpAPI, Supabase, Row-Level Security, Real-time Subscriptions, Blockchain Integration, ESLint, PostCSS, Lucide React, Netlify",
+    "tags": "AI, Gemini, Blockchain, and Crowd Wisdom",
+    "projectGithubLink": "https://github.com/HimanshuHeda/Zip_Tales",
+    "projectSiteLink": "https://ziptales.netlify.app/",
+    "userLinkedin": "https://www.linkedin.com/in/himanshu-heda/"
+  },
+  {
+    "email": "nikhilbalamurugan@gmail.com",
+    "name": "Nikhil Balamurugan",
+    "projectName": "FitYou",
+    "projectDescription": "FitYou redefines fitness with AI-driven personalized plans for workouts and diets. The platform adapts to user goals and lifestyle, providing tailored routines, customized diet plans focused on Indian cuisine, and AI-powered insights for optimal fitness outcomes. It features a dark-themed, user-friendly interface with professional guidance.",
+    "techStack": "React.js, Flask, Scikit-learn, MongoDB, Google Generative AI, Machine Learning, API Integration, Predictive Modeling",
+    "tags": "Beginner friendly, easy level, ai based, FitnessAI, PersonalizedWorkouts, IndianCuisine, HealthTech, AIFitness, WorkoutPlans, DietRecommendations",
+    "projectGithubLink": "https://github.com/Nikhil210206/FitYou---Fit_Ai",
+    "projectSiteLink": "",
+    "userLinkedin": "https://www.linkedin.com/in/nikhilb21"
+  },
+  {
+    "email": "srigadaakshay@gmail.com",
+    "name": "Akshay Kumar",
+    "projectName": "Stock Analyzer",
+    "projectDescription": "Stock Analyzer is a complete stock market analysis tool utilizing ML models for comprehensive financial insights. The platform allows users to input stock symbols, select date ranges, view historical stock trends, and see future stock price predictions via interactive charts for informed investment decisions.",
+    "techStack": "JavaScript, Python, React js, CSS, HTML",
+    "tags": "Web Development, ReactJS, Full Stack, Responsive Design, JavaScript, Python, Backend, UI/UX, StockAnalysis, FinancialTools, MLModels, InvestmentPlatform",
+    "projectGithubLink": "https://github.com/SrigadaAkshayKumar/stock",
+    "projectSiteLink": "",
+    "userLinkedin": "https://www.linkedin.com/in/akshaykumarsrigada"
+  },
+  {
+    "email": "tushar.chaurasia.1883@gmail.com",
+    "name": "Tushar Chaurasia",
+    "projectName": "QubitVerse",
+    "projectDescription": "QubitVerse is a simple quantum gate simulator implemented in C++ that allows users to store and apply various quantum gates to qubit states. The simulator works as a backend with a Node.js-based GUI for interactive, visual experience, making quantum computing concepts accessible and educational.",
+    "techStack": "C++, ReactJS",
+    "tags": "quantum, quantum-computing, quantum-simulator, quantum-circuit, quantum-gate, quantum-visualizer, qubit, quantum-education, open-source, interactive-tool, c++, nodejs, react, javascript, web-app, gui, frontend, backend, quantum-gates, bloch-sphere, quantum-state, state-evolution, circuit-simulator, probability-distribution, multi-qubit, drag-and-drop, quantum-algorithms, education, learning, research-tool, teaching-aid, stem",
+    "projectGithubLink": "https://github.com/Dark-CodeX/qubitverse",
+    "projectSiteLink": "",
+    "userLinkedin": "https://www.linkedin.com/in/tushar-chaurasia-34487728b/"
+  },
+  {
+    "email": "rudranarayanswain10001@gmail.com",
+    "name": "Rudra narayan swain",
+    "projectName": "Own Personal AI assistant",
+    "projectDescription": "R-JARVIS is a voice-activated, Python-based AI assistant that goes beyond typical automation. The system performs advanced system control tasks and can create and deploy another AI assistant purely through voice commands. It showcases the future of human-AI collaboration where AI builds AI, powered solely by speech.",
+    "techStack": "Python, AI, Voice Recognition, System Automation, Speech Processing, Machine Learning, Natural Language Processing",
+    "tags": "Python, AIProject, VoiceAssistant, JarvisAI, Automation, SystemAutomation, VoiceControlledAI, ArtificialIntelligence, PythonAutomation, OpenAI",
+    "projectGithubLink": "https://github.com/rudranarayan992/R-JARVIS",
+    "projectSiteLink": "",
+    "userLinkedin": "https://www.linkedin.com/in/rudra-narayan-swain-cyber-student/"
+  },
+  {
+    "email": "umangdalvadi8@gmail.com",
+    "name": "Umang Dalvadi",
+    "projectName": "Jira-to-code | VS Code Extension",
+    "projectDescription": "Jira-to-code is an AI-powered VS Code extension that automates the full SDLC from Jira ticket to production-ready code. The extension integrates Jira OAuth2 and orchestrates multiple LLMs to generate code, tests with 80% coverage, and technical documentation with automated Git workflows.",
+    "techStack": "Node.js, React.js, Generative AI, Tailwind Css",
+    "tags": "GenerativeAI, VScodeExtension, Automation, AI, CodeGeneration, SDLC, JiraIntegration, DevelopmentTools, VS Code, ExtensionDevelopment",
+    "projectGithubLink": "https://github.com/UmangDalvadi/jira-to-code-extension",
+    "projectSiteLink": "",
+    "userLinkedin": "https://www.linkedin.com/in/umang-dalvadi/"
+  },
+  {
+    "email": "bhavyareddy.mamidala@gmail.com",
+    "name": "M BHAVYA REDDY",
+    "projectName": "Dine24",
+    "projectDescription": "Dine24 is a full-stack restaurant system with real-time booking, admin dashboard, and dynamic menu management. The platform implements PDF invoice generation, email notifications, and secure user authentication with Supabase RLS. It includes an AI chatbot for smart customer interactions and food recommendations.",
+    "techStack": "react.js,tailwindcss,supabase,gemini api",
+    "tags": "Restaurant Management, E-commerce, Real-time Booking, Admin Dashboard, Menu Management, PDF Generation, Email Notifications, AI Chatbot, Food Recommendations, Restaurant Technology",
+    "projectGithubLink": "https://github.com/mamidalabhavya/DINE-24",
+    "projectSiteLink": "",
+    "userLinkedin": "https://www.linkedin.com/in/bhavyamamidala/"
+  },
+  {
+    "email": "rksingh1744@gmail.com",
+    "name": "Rituraj Kumar Singh",
+    "projectName": "GeniusAI",
+    "projectDescription": "GeniusAI is an AI-powered career coaching platform that offers personalized guidance based on user profiles, interests, and market trends. The platform helps users explore career paths, generate professional resumes, take assessments, and access job market insights through AI-driven career tools and analytics.",
+    "techStack": "React.js, Tailwind CSS, HTML5, CSS3, JavaScript, Node.js, Express.js, MongoDB, JWT, OpenAI API, Custom Python AI Models, Git, GitHub, Postman",
+    "tags": "AI Career Coach, Resume Builder, Career Dashboard, React.js, OpenAI, Career Guidance, Smart Profile Analyzer, Job Market Insights, Career Development, AI Coaching",
+    "projectGithubLink": "https://github.com/Riturajkumarsingh/GeniusAI",
+    "projectSiteLink": "",
+    "userLinkedin": "https://www.linkedin.com/in/rksingh1744/"
+  },
+  {
+    "email": "rudrika.sharma@cumminscollege.in",
+    "name": "Rudrika Sharma",
+    "projectName": "Personal financial advisory bot",
+    "projectDescription": "The Financial Advisory Bot is an AI-powered financial dashboard that helps users make smarter investment decisions by combining deep learning-based stock price forecasting, macroeconomic insights, technical indicators, real-time stock news, and a conversational AI chatbot for comprehensive financial analysis and planning.",
+    "techStack": "Streamlit, Gemini AI, TensorFlow/Keras (LSTM), yFinance, FRED API, NewsAPI/GNews, Python-Dotenv.",
+    "tags": "Streamlit, FinanceBot, AI, LSTM, StockAnalysis, GeminiAI, PortfolioTracking, NewsSummarizer, Python, FinTech, InvestmentTools, FinancialPlanning, StockPrediction",
+    "projectGithubLink": "https://github.com/rudrikasharma15/financial-advisory-bot",
+    "projectSiteLink": "",
+    "userLinkedin": "https://www.linkedin.com/in/rudrika-sharma-514490271"
+  },
+  {
+    "email": "avishkarpatil64@gmail.com",
+    "name": "Avishkar Patil",
+    "projectName": "IssueMatch",
+    "projectDescription": "IssueMatch is an open-source contributions platform designed to find the perfect match between developer skills and project requirements. The platform helps developers discover suitable open-source projects and assists project maintainers in finding contributors with the right skill sets for their projects.",
+    "techStack": "Python (Fast API), React Next JS, TailwindCSS",
+    "tags": "Open-source, GitHub, Skills, Contribution Matching, Developer Tools, Project Discovery, Skill Matching, Open Source Community, Developer Platform",
+    "projectGithubLink": "https://github.com/AvishkarPatil/IssueMatch",
+    "projectSiteLink": "",
+    "userLinkedin": "https://www.linkedin.com/in/theavishkar/"
+  },
+  {
+    "email": "avishkarpatil64@gmail.com",
+    "name": "Avishkar Patil",
+    "projectName": "JalWiKi",
+    "projectDescription": "JalWiKi is a comprehensive platform focused on addressing water scarcity through sharing conservation techniques and awareness. The project provides solutions and educational resources for water conservation, promoting sustainable practices and environmental awareness for real-world problem solving.",
+    "techStack": "Django, Python, NextJS, RESTAPi",
+    "tags": "Water Conservation, Awareness, Real World Problem, Environmental Protection, Sustainability, Water Management, Conservation Techniques, Environmental Education, Sustainable Development",
+    "projectGithubLink": "https://github.com/AvishkarPatil/JalWiKi",
+    "projectSiteLink": "https://jalwiki.vercel.app/",
+    "userLinkedin": "https://www.linkedin.com/in/theavishkar/"
+  },
+  {
+    "email": "hi.zoxilsi@gmail.com",
+    "name": "ABHIJITH T",
+    "projectName": "AI_TERMINAL",
+    "projectDescription": "AI Terminal is an intelligent command-line terminal powered by Natural Language Processing that understands human-like queries and suggests relevant Linux commands in real-time. The platform features smart auto-suggestions, command explanations, and automatic text wrapping for improved terminal interaction and user experience.",
+    "techStack": "RUST, SHELL",
+    "tags": "ai-terminal, natural-language-processing, linux-terminal, command-line-interface, autocomplete, command-suggestions, Terminal Enhancement, CLI Tools, AI-Powered Terminal, Linux Development",
+    "projectGithubLink": "https://github.com/zoxilsi/AI_TERMINAL",
+    "projectSiteLink": "",
+    "userLinkedin": "https://www.linkedin.com/in/zoxilsi/"
+  },
+  {
+    "email": "aryanpandey52355@gmail.com",
+    "name": "Aryan Pandey",
+    "projectName": "AuraCast- AI-powered Air Quality Forecasting",
+    "projectDescription": "AuraCast is a next-generation air quality monitoring app that provides hyperlocal AQI data and AI-powered 24-hour forecasts for Lucknow, India. The platform offers real-time map interactivity, LSTM-based predictions, and comprehensive pollutant analysis with health recommendations for environmental awareness and public health protection.",
+    "techStack": "Modern UI/UX, Framer Motion, Replit, Convex Backend, Gemini API, Weather Forecast API, Real-time Data Processing, LSTM Neural Networks, Environmental Monitoring",
+    "tags": "AI, ArtificialIntelligence, TechForGood, ClimateTech, SustainableTech, SmartCity, Innovation, RealTimeData, OpenSource, DataDriven, AirQuality, EnvironmentalAwareness, CleanAir, AQI, ClimateAction, EnvironmentMatters, PollutionMonitoring",
+    "projectGithubLink": "https://github.com/aryanpyx/AuraCast",
+    "projectSiteLink": "https://lnkd.in/eUbVKvG5",
+    "userLinkedin": "https://www.linkedin.com/in/aryan-pandey-pyx"
+  }
+]

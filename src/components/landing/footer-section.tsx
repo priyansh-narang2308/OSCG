@@ -33,7 +33,7 @@ const Footer = () => {
 
             <Link
               href="/osci"
-              target="_blank"
+              // target="_blank"
               className="relative mt-3 inline-flex items-center justify-center rounded-xl border border-[#3AE3B8]/40 bg-[#0E1422] px-4 py-2 text-sm font-semibold text-[#5BEBB5] transition-all duration-300 hover:border-[#5BEBB5] hover:bg-[#1A2335] hover:shadow-[0_0_12px_#3AE3B8]/40"
             >
               <span className="relative z-10">
