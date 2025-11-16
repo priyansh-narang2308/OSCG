@@ -13,7 +13,7 @@ const HeroSection = () => {
   useEffect(() => {
     const loadUser = async () => {
       const { data } = await supabase.auth.getUser();
-      setUser(data.user || null);
+      setUser(data.user ||null);
     };
 
     loadUser();
