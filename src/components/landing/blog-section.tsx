@@ -36,7 +36,7 @@ const articles = [
 
 const LatestInsights = () => {
   return (
-    <section className="py-20 bg-[#090E1A]">
+    <section className="py-10 bg-[#090E1A]">
       <div className="container mx-auto px-6 ">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-4xl text-white font-bold md:text-5xl">
@@ -94,7 +94,7 @@ const LatestInsights = () => {
           ))}
         </div>
 
-        <div className="text-center p-10">
+        <div className="text-center px-10">
           <Button
             size="lg"
             className=" cursor-pointer
