@@ -21,6 +21,8 @@ export default function Home() {
       <LatestInsights />
       <FAQ />
       <Footer />
+      <About />
+      {/* <Come></Come> */}
     </div>
   );
 }
