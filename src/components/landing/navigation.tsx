@@ -34,11 +34,11 @@ import {
 const navItems = [
   { label: "About us", href: "/about" },
   { label: "Projects", href: "/projects" },
-  { label: "Speakers", href: "#speakers" },
-  { label: "Leaderboard", href: "#leaderboard" },
-  { label: "Team", href: "#team" },
+  { label: "Speakers", href: "/speakers" },
+  { label: "Leaderboard", href: "/leaderboard" },
+  { label: "Team", href: "/team" },
   { label: "Timeline", href: "/timeline" },
-  { label: "Blog", href: "#blog" },
+  { label: "Blog", href: "/blog" },
 ];
 
 const Navigation = () => {
@@ -154,16 +154,15 @@ const Navigation = () => {
                   <DropdownMenuSeparator className="bg-gray-200" />
 
                   <AlertDialog>
-                   <AlertDialogTrigger asChild>
-  <DropdownMenuItem
-    onSelect={(e) => e.preventDefault()}
-    className="cursor-pointer flex items-center gap-2 text-red-500 hover:text-red-600 font-medium rounded-md px-2 py-2 transition-colors"
-  >
-    <LogOut className="w-4 h-4" />
-    Log out
-  </DropdownMenuItem>
-</AlertDialogTrigger>
-
+                    <AlertDialogTrigger asChild>
+                      <DropdownMenuItem
+                        onSelect={(e) => e.preventDefault()}
+                        className="cursor-pointer flex items-center gap-2 text-red-500 hover:text-red-600 font-medium rounded-md px-2 py-2 transition-colors"
+                      >
+                        <LogOut className="w-4 h-4" />
+                        Log out
+                      </DropdownMenuItem>
+                    </AlertDialogTrigger>
 
                     <AlertDialogContent className="bg-white text-[#0B0F17] rounded-xl">
                       <AlertDialogHeader>

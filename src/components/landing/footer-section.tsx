@@ -164,10 +164,10 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex w-full max-w-xl mt-1 gap-4 justify-center flex-col sm:flex-col md:flex-row">
-             <Input
-  type="email"
-  placeholder="Enter your email"
-  className="
+              <Input
+                type="email"
+                placeholder="Enter your email"
+                className="
     h-14 w-full 
     rounded-full bg-[#363A43] px-6 text-lg text-white
     placeholder:text-white/70 border-none shadow-md 
@@ -176,8 +176,7 @@ const Footer = () => {
     md:max-w-[300px] 
     lg:max-w-[280px]
   "
-/>
-
+              />
 
               <Button className="cursor-pointer h-14 text-black bg-[#5bebb5] hover:bg-[#4dddabd3] rounded-full px-10 text-lg font-semibold shadow-[0_10px_30px_rgba(91,235,181,0.35)] w-full md:w-auto">
                 Subscribe

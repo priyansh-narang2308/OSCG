@@ -1,7 +1,6 @@
 "use client"
 
 import { Github, Star, GitFork, ExternalLink } from "lucide-react";
-import { Button } from "../ui/button";
 import { useState } from "react";
 
 const projects = [
@@ -63,10 +62,10 @@ const projects = [
 const borderColors = ["border-t-blue-500","border-t-emerald-500","border-t-purple-500","border-t-orange-500","border-t-blue-400","border-t-amber-500"]
 
 const ProjectsSection = () => {
-    const [loading, setLoading] = useState<boolean>(false)
+    const [loading] = useState<boolean>(false)
     if (loading) {
     return (
-      <section id="projects" className="py-25 bg-[#090E1A]">
+      <section id="projects" className="py-30 bg-[#090E1A]">
       <div className="container mx-auto px-8 ">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-4xl text-white font-bold md:text-5xl">
@@ -126,7 +125,7 @@ const ProjectsSection = () => {
     );
   }
   return (
-    <section id="projects" className="py-20 bg-[#090E1A]">
+    <section id="projects" className="py-35 bg-[#090E1A]">
       <div className="container mx-auto px-8 ">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-4xl text-white font-bold md:text-5xl">

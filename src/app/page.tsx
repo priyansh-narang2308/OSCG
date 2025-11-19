@@ -1,4 +1,3 @@
-
 import LatestInsights from "@/components/landing/blog-section";
 import CoreValues from "@/components/landing/core-values";
 import FAQ from "@/components/landing/faq-section";
@@ -14,14 +13,13 @@ export default function Home() {
     <div>
       <Navigation />
       <HeroSection />
-      <CoreValues/>
+      <CoreValues />
       <ProjectsSection />
       <SpeakersSection />
       <SponsersSection />
       <LatestInsights />
       <FAQ />
       <Footer />
-      <About />
       {/* <Come></Come> */}
     </div>
   );
