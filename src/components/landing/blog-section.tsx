@@ -1,5 +1,8 @@
+"use client";
+
 import { ArrowRight, Calendar, Clock, User } from "lucide-react";
 import { Button } from "../ui/button";
+import { motion, Variants } from "framer-motion";
 
 const articles = [
   {
@@ -34,25 +37,73 @@ const articles = [
   },
 ];
 
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.15, delayChildren: 0.2 },
+  },
+};
+
+const fadeUp: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] },
+  },
+};
+
+const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 60, scale: 0.9 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] },
+  },
+};
+
 const LatestInsights = () => {
   return (
     <section className="py-10 bg-[#090E1A]">
-      <div className="container mx-auto px-6 ">
-        <div className="mb-12 text-center">
-          <h2 className="mb-4 text-4xl text-white font-bold md:text-5xl">
+      <div className="container mx-auto px-6">
+        <motion.div
+          className="mb-12 text-center"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
+          <motion.h2
+            className="mb-4 text-4xl text-white font-bold md:text-5xl"
+            variants={fadeUp}
+          >
             Latest <span className="text-[#4FD1D0]">Insights</span>
-          </h2>
-          <p className="mx-auto max-w-2xl text-white/80">
+          </motion.h2>
+
+          <motion.p
+            className="mx-auto max-w-2xl text-white/80"
+            variants={fadeUp}
+          >
             Stay updated with the latest news, tutorials, and insights from the
             open source community
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
-        <div className="mb-12 grid gap-6 md:grid-cols-3">
+        <motion.div
+          className="mb-12 grid gap-6 md:grid-cols-3"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
           {articles.map((article, index) => (
-            <div
+            <motion.div
               key={index}
-              className="overflow-hidden rounded-lg border border-border bg-[#0A0F1B] transition-transform hover:scale-105"
+              variants={cardVariants}
+              whileHover={{ scale: 1.05 }}
+              className="overflow-hidden rounded-lg border border-border bg-[#0A0F1B]"
             >
               <div className="relative h-48 bg-[#0A0F1B] flex items-center justify-center">
                 <span className="text-white">{article.image}</span>
@@ -60,6 +111,7 @@ const LatestInsights = () => {
                   {article.category}
                 </div>
               </div>
+
               <div className="p-6">
                 <div className="mb-3 flex items-center gap-4 text-xs text-muted-foreground">
                   <div className="flex items-center gap-1 text-white/70">
@@ -71,12 +123,15 @@ const LatestInsights = () => {
                     {article.readTime}
                   </div>
                 </div>
+
                 <h3 className="mb-2 text-lg font-semibold text-white">
                   {article.title}
                 </h3>
+
                 <p className="mb-4 text-sm text-white/50">
                   {article.description}
                 </p>
+
                 <hr className="border-t border-white/30" />
 
                 <div className="flex items-center mt-3 justify-between">
@@ -84,30 +139,34 @@ const LatestInsights = () => {
                     <User className="h-4 w-4" />
                     {article.author}
                   </div>
-                  <Button variant="link" className="h-auto p-0 text-[#00D4AA] cursor-pointer">
+
+                  <Button
+                    variant="link"
+                    className="h-auto p-0 text-[#00D4AA] cursor-pointer"
+                  >
                     Read
                     <ArrowRight className="ml-1 h-3 w-3" />
                   </Button>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
-        <div className="text-center px-10">
+        <motion.div
+          className="text-center px-10"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
           <Button
             size="lg"
-            className=" cursor-pointer
-            text-black                 
-            bg-[#5bebb5]               
-            hover:bg-[#4dddabd3]         
-            rounded-full              
-            px-10 py-4             
-            font-semibold         shadow-lg     "
+            className="cursor-pointer text-black bg-[#5bebb5] hover:bg-[#4dddabd3] rounded-full px-10 py-4 font-semibold shadow-lg"
           >
             View All Articles
           </Button>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

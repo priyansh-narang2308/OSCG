@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Accordion,
   AccordionContent,
@@ -5,6 +7,7 @@ import {
   AccordionTrigger,
 } from "../ui/accordion";
 import { Button } from "../ui/button";
+import { motion, Variants } from "framer-motion";
 
 const faqs = [
   {
@@ -49,40 +52,95 @@ const faqs = [
   },
 ];
 
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.15, delayChildren: 0.2 },
+  },
+};
+
+const fadeUp: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] },
+  },
+};
+
+const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 60, scale: 0.9 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] },
+  },
+};
+
 const FAQ = () => {
   return (
     <section className="py-5 bg-[#090E1A]">
       <div className="container mx-auto px-6">
-        <div className="mb-12 text-center">
-          <h2 className="mb-4 text-4xl text-white font-bold md:text-5xl">
+        <motion.div
+          className="mb-12 text-center"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
+          <motion.h2
+            className="mb-4 text-4xl text-white font-bold md:text-5xl"
+            variants={fadeUp}
+          >
             Frequently Asked <span className="text-[#4FD1D0]">Questions</span>
-          </h2>
-          <p className="mx-auto max-w-2xl text-white/80">
+          </motion.h2>
+
+          <motion.p
+            className="mx-auto max-w-2xl text-white/80"
+            variants={fadeUp}
+          >
             Find answers to common questions about OSCG 2026
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
-        <div className="mx-auto max-w-3xl">
-          <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
-              <AccordionItem
-                key={index}
-                value={`item-${index}`}
-                className="rounded-lg bg-[#161A26] px-6"
-              >
-               <AccordionTrigger className="text-left text-white hover:no-underline cursor-pointer [&>svg]:text-[#00D4AA]">
-  {faq.question}
-</AccordionTrigger>
+        <motion.div
+          className="mx-auto max-w-3xl"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
+          <motion.div variants={fadeUp}>
+            <Accordion type="single" collapsible className="space-y-4">
+              {faqs.map((faq, index) => (
+                <motion.div key={index} variants={cardVariants}>
+                  <AccordionItem
+                    value={`item-${index}`}
+                    className="rounded-lg bg-[#161A26] px-6"
+                  >
+                    <AccordionTrigger className="text-left text-white hover:no-underline cursor-pointer [&>svg]:text-[#00D4AA]">
+                      {faq.question}
+                    </AccordionTrigger>
 
-                <AccordionContent className="text-white/60">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
+                    <AccordionContent className="text-white/60">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                </motion.div>
+              ))}
+            </Accordion>
+          </motion.div>
+        </motion.div>
 
-        <div className="mx-auto mt-20 w-[890px] max-w-full rounded-3xl bg-[#161A26]/60 backdrop-blur-md border border-white/10 p-12 text-center shadow-lg">
+        <motion.div
+          className="mx-auto mt-20 w-[890px] max-w-full rounded-3xl bg-[#161A26]/60 backdrop-blur-md border border-white/10 p-12 text-center shadow-lg"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
           <h3 className="mb-3 text-2xl font-semibold text-white">
             Still have questions?
           </h3>
@@ -95,7 +153,7 @@ const FAQ = () => {
           >
             Contact Support
           </Button>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion,Variants } from "framer-motion";
 import { Users, GraduationCap, Lightbulb } from "lucide-react";
 
 const CoreValues = () => {
@@ -24,33 +24,59 @@ const CoreValues = () => {
     },
   ];
 
-  const containerVariants = {
-    hidden: {},
+  const containerVariants:Variants = {
+    hidden: { opacity: 0 },
     visible: {
+      opacity: 1,
       transition: {
-        staggerChildren: 0.2,
+        staggerChildren: 0.15,
+        delayChildren: 0.2,
       },
     },
   };
 
-  const cardVariants = {
-    hidden: { opacity: 0, y: 60 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  const cardVariants:Variants = {
+    hidden: {
+      opacity: 0,
+      y: 60,
+      scale: 0.9,
+      rotateX: -10,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      rotateX: 0,
+      transition: {
+        duration: 0.8,
+        ease: [0.25, 0.46, 0.45, 0.94],
+      },
+    },
   };
 
-  const iconVariants = {
-    hidden: { opacity: 0, scale: 0.6, rotate: -15 },
+  const iconVariants:Variants = {
+    hidden: { opacity: 0, scale: 0.7, rotate: -10 },
     visible: {
       opacity: 1,
       scale: 1,
       rotate: 0,
-      transition: { duration: 0.6 },
+      transition: {
+        duration: 0.6,
+        ease: [0.25, 0.46, 0.45, 0.94],
+      },
     },
   };
 
-  const fadeUp = {
-    hidden: { opacity: 0, y: 40 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+  const fadeUp:Variants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.7,
+        ease: [0.25, 0.46, 0.45, 0.94],
+      },  
+    },
   };
 
   return (
@@ -71,7 +97,8 @@ const CoreValues = () => {
               WHAT DRIVES US FORWARD
             </span>
             <div className="flex gap-1">
-<div className="w-2 h-2 rounded-full bg-radial from-[#1AD5BD] to-transparent" />           </div>
+              <div className="w-2 h-2 rounded-full bg-radial from-[#1AD5BD] to-transparent" />{" "}
+            </div>
           </div>
         </motion.div>
 
