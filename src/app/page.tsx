@@ -9,6 +9,7 @@ import SpeakersSection from "@/components/landing/speakers-section";
 import SponsersSection from "@/components/landing/sponsors-section";
 
 import  About from "@/components/Aboutus/About";
+// import Come from "@/components/ComingSoon/Come";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
      
       <Footer />
       <About />
+      {/* <Come></Come> */}
     </div>
   );
 }
