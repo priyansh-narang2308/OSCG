@@ -69,7 +69,7 @@ const ProjectsSection = () => {
       <div className="container mx-auto px-8 ">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-4xl text-white font-bold md:text-5xl">
-            Our <span className="text-[#4FD1D0]">Projects</span>
+            Explore <span className="text-[#4FD1D0]">Projects</span>
           </h2>
           <p className="mx-auto max-w-2xl text-white/80">
             Discover innovative open source projects that are shaping the future
@@ -129,7 +129,7 @@ const ProjectsSection = () => {
       <div className="container mx-auto px-8 ">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-4xl text-white font-bold md:text-5xl">
-            Our <span className="text-[#4FD1D0]">Projects</span>
+            Explore <span className="text-[#4FD1D0]">Projects</span>
           </h2>
           <p className="mx-auto max-w-2xl text-white/80">
             Discover innovative open source projects that are shaping the future

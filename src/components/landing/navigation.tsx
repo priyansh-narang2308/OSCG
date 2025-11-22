@@ -219,7 +219,7 @@ const Navigation = () => {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: -10 }}
             >
-              <div className="py-3 space-y-1 max-h-[55vh] overflow-y-auto">
+              <div className="py-3 space-y-1">
                 {navItems.map((item, index) => (
                   <motion.div
                     key={item.href}
@@ -239,16 +239,7 @@ const Navigation = () => {
 
                 <div className="border-t border-[#6FE7C1]/20 my-3 mx-4" />
 
-                {!user ? (
-                  <div className="px-6 py-3">
-                    <Button
-                      className="w-full border-2 border-[#6FE7C1] text-white bg-transparent rounded-full py-3 font-semibold hover:bg-[#6FE7C1] hover:text-[#0B0F17]"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Sign In
-                    </Button>
-                  </div>
-                ) : (
+                {user && (
                   <div className="px-6 py-3 flex justify-between items-center">
                     <Avatar className="cursor-pointer border border-[#6FE7C1]">
                       <AvatarImage src={avatar} />

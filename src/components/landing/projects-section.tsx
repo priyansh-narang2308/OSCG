@@ -181,7 +181,7 @@ const ProjectsSection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            Our <span className="text-[#4FD1D0]">Projects</span>
+            Explore <span className="text-[#4FD1D0]">Projects</span>
           </motion.h2>
           <motion.p
             className="mx-auto max-w-2xl text-white/80 text-lg"

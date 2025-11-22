@@ -107,7 +107,7 @@ const CoreValues = () => {
         </motion.div>
 
         <motion.div className="text-center mb-6" variants={fadeUp}>
-          <h2 className="text-5xl md:text-6xl font-bold text-white">
+          <h2 className="text-5xl md:text-5xl font-bold text-white">
             Our Core <span className="text-[#5BCFD6]">Values</span>
           </h2>
         </motion.div>

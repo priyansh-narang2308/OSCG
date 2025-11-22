@@ -10,8 +10,8 @@ const Footer = () => {
   return (
     <footer className=" bg-[#090E1A] pt-16 pb-8">
       <div className="container mx-auto px-6">
-        <div className="mb-12 grid gap-12 text-center lg:text-left lg:grid-cols-4">
-          <div className="flex flex-col items-center lg:items-start">
+        <div className="mb-12 grid gap-12 text-left lg:grid-cols-4">
+          <div className="flex flex-col items-start">
             <div className="mb-4 flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10">
                 <Image
@@ -33,7 +33,6 @@ const Footer = () => {
 
             <Link
               href="/osci"
-              // target="_blank"
               className="relative mt-3 inline-flex items-center justify-center rounded-xl border border-[#3AE3B8]/40 bg-[#0E1422] px-4 py-2 text-sm font-semibold text-[#5BEBB5] transition-all duration-300 hover:border-[#5BEBB5] hover:bg-[#1A2335] hover:shadow-[0_0_12px_#3AE3B8]/40"
             >
               <span className="relative z-10">
@@ -74,7 +73,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center lg:items-start">
+          <div className="flex flex-col items-start">
             <h4 className="mb-4 text-lg font-semibold text-white">
               Quick Links
             </h4>
@@ -100,7 +99,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex flex-col items-center lg:items-start">
+          <div className="flex flex-col items-start">
             <h4 className="mb-4 text-lg font-semibold text-white">Resources</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               {[
@@ -123,7 +122,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex flex-col items-center lg:items-start">
+          <div className="flex flex-col items-start">
             <h4 className="mb-4 text-lg font-semibold text-white">
               Contact Us
             </h4>
@@ -153,7 +152,7 @@ const Footer = () => {
         </div>
 
         <div className="mb-16 rounded-lg bg-[#181D28] p-8">
-          <div className="flex flex-col items-center text-center gap-6 lg:flex-row lg:items-start lg:text-left lg:justify-between">
+          <div className="flex flex-col items-start text-left gap-6 lg:flex-row lg:items-start lg:justify-between">
             <div>
               <h3 className="mb-2 text-2xl font-semibold text-white">
                 Stay Updated
@@ -163,7 +162,7 @@ const Footer = () => {
                 announcements
               </p>
             </div>
-            <div className="flex w-full max-w-xl mt-1 gap-4 justify-center flex-col sm:flex-col md:flex-row">
+            <div className="flex w-full max-w-xl mt-1 gap-4 flex-col sm:flex-col md:flex-row">
               <Input
                 type="email"
                 placeholder="Enter your email"
@@ -186,7 +185,7 @@ const Footer = () => {
         </div>
 
         <div className="w-full h-[1.5px] my-8 bg-linear-to-r from-transparent via-white/20 to-transparent" />
-        <div className="flex flex-col items-center text-center gap-4 pt-8 text-sm text-white/60 md:flex-row md:justify-between md:text-left">
+        <div className="flex flex-col items-start text-left gap-4 pt-8 text-sm text-white/60 md:flex-row md:justify-between">
           <p>&copy; 2026 Open Source Connect Global. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="#" className="text-white/60 transition-colors">
